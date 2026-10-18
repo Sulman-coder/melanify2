@@ -152,3 +152,74 @@
   height: auto;
   object-fit: contain;
 }
+
+/* Revised homepage hero and the two independently animated logo layers. */
+.home-hero {
+  position: relative;
+  background: #c8dbea url("images/Melanify.png") center / cover no-repeat;
+  padding: clamp(24px, 4vw, 48px) 20px 60px;
+}
+
+.home-hero #logo1,
+.home-hero #logo2 {
+  width: min(100%, 760px);
+  max-width: none;
+  padding: 0;
+  align-self: center;
+  transform-origin: center;
+}
+
+.home-hero #logo1 { animation: home-mark-float 6s ease-in-out infinite; }
+.home-hero #logo2 { animation: home-wordmark-breathe 5s ease-in-out infinite; }
+
+.home-hero #logo1 img,
+.home-hero #logo2 img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+.home-hero .hero-copy {
+  opacity: 1;
+  transform: none;
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.home-hero .hero-copy.reveal-pending {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+.regional-card .stat-icon {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.benefit-card:nth-child(2) .benefit-image img,
+.benefit-card:nth-child(3) .benefit-image img {
+  object-fit: cover;
+}
+
+.partners-section { grid-template-columns: minmax(0, 1fr); }
+
+@keyframes home-mark-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes home-wordmark-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (max-width: 640px) {
+  .home-hero { padding-inline: 16px; }
+  .home-hero .hero-copy { padding-inline: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero #logo1,
+  .home-hero #logo2 { animation: none; }
+  .home-hero .hero-copy.reveal-pending { opacity: 1; transform: none; }
+}

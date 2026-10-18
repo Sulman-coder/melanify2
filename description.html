@@ -22,6 +22,9 @@
 }
     </style>
     <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="description.css">
+  <link rel="stylesheet" href="navigation-footer.css">
 </head>
   <body data-page="description">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -72,11 +75,19 @@
         <h2 id="abstract">Abstract</h2>
         <p>Polyethylene terephthalate (PET) plastic is heavily utilized in global single-serve beverage packaging [1], resulting in an estimated 500 billion to 1 trillion plastic bottles consumed globally each year [2]. Because PET plastic takes up to 500 years to degrade, the vast majority of this non-biodegradable waste accumulates in landfills and marine environments [1, 2]. Concurrently, human populations are exposed to solar ultraviolet (UV) radiation, which is carcinogenic and a leading cause of skin cancers, cataracts, and cellular DNA damage [3]. Chemical sunscreens are widely used to reduce overexposure; however, active ingredients such as oxybenzone have been linked to skin irritation, contact dermatitis, and concerns about endocrine disruption [4, 5], as well as degradation of marine ecosystems through coral bleaching and toxic accumulation [4, 5]. We aim to bridge these dual challenges by converting post-consumer PET plastic waste into allomelanin, a biopolymer with potential for broad-spectrum UV protection.</p>
         <h2 id="our-why">Our Why</h2>
+        <figure class="why-photo">
+          <img src="assets/client-community-consultation-1.webp" alt="MELANIFY students discussing their research together" width="1800" height="1013" loading="lazy">
+        </figure>
         <p>As young researchers living in Thailand, we witness the dual threats of extreme environmental degradation and significant health risks every day. Our country is at a critical crossroads: our bustling metropolitan centers and rivers are overrun with mismanaged plastic garbage, while our tropical position exposes millions of citizens and coastal ecosystems to constant, harsh ultraviolet radiation.</p>
         <p>We concluded that the two distinct crises, plastic buildup and UV exposure, are inextricably linked. Our project was created not only as a laboratory experiment, but also as a response to our immediate surroundings, based on localized facts in Thailand.</p>
-        <div class="context-accordions">
+        <div class="local-context-layout">
+          <div class="context-accordions">
           <details class="context-detail"><summary>Plastic Pollution in Thailand <span class="chevron" aria-hidden="true"></span></summary><div><p>Despite a reported 88.8% municipal waste collection rate, Thailand generates an estimated 428 kilotons of mismanaged plastic waste annually due to collection gaps and unsanitary disposal facilities [7]. While rural areas produce 70.1% of the waste exposed to environmental wash-off, extreme urban density makes Bangkok a critical leakage point [7]. Within Thailand’s high-priority river catchments, just 10 districts in and around Bangkok account for 51.7% of all exposed mismanaged plastic [7].</p><p>Massive volumes of this uncollected waste are dumped directly into waterways like the Chao Phraya River [7]. Once in the river system, 47.6% of this plastic flows into the ocean, resulting in an average marine discharge of 9.3 kilotons annually [7]. This figure surges to 14.3 kilotons during the rainy season, heavily contaminating vulnerable coastal ecosystems [7].</p></div></details>
-          <details class="context-detail"><summary>The UV Radiation in Thailand <span class="chevron" aria-hidden="true"></span></summary><div><p>Thailand endures severe year-round solar radiation, with the national UV index averaging 11 and 12 annually and surging to extreme levels between 13 and 14 across the country during the March hot season [8, 10]. Across major provinces like Bangkok and Phuket, a mere 15 to 20 minutes of midday exposure can trigger acute sunburn [10]. The World Health Organization classifies ultraviolet radiation as a carcinogen that damages cellular DNA and can affect the skin, eyes, and immune system [9]. Over time, chronic exposure leads to severe health conditions, including cataracts, premature skin aging, and skin cancers [9]. Because global health guidelines recommend sun protection at a UV index of 3 or above [9], Thailand’s extreme solar radiation levels make daily sun protection essential for millions of outdoor workers and residents.</p><figure class="research-figure"><a class="figure-open" href="assets/client-uv-thailand.webp" data-image="assets/client-uv-thailand.webp" data-alt="UV Index Map of Thailand in March 2026" target="_blank" rel="noopener"><img src="assets/client-uv-thailand.webp" alt="UV Index Map of Thailand in March 2026, showing high to extreme levels" width="875" height="825" loading="lazy"><span class="figure-zoom">View full size</span></a><figcaption>Figure 1. UV Index Map of Thailand in March 2026 [8].</figcaption></figure></div></details>
+          <details class="context-detail"><summary>The UV Radiation in Thailand <span class="chevron" aria-hidden="true"></span></summary><div><p>Thailand endures severe year-round solar radiation, with the national UV index averaging 11 and 12 annually and surging to extreme levels between 13 and 14 across the country during the March hot season [8, 10]. Across major provinces like Bangkok and Phuket, a mere 15 to 20 minutes of midday exposure can trigger acute sunburn [10]. The World Health Organization classifies ultraviolet radiation as a carcinogen that damages cellular DNA and can affect the skin, eyes, and immune system [9]. Over time, chronic exposure leads to severe health conditions, including cataracts, premature skin aging, and skin cancers [9]. Because global health guidelines recommend sun protection at a UV index of 3 or above [9], Thailand’s extreme solar radiation levels make daily sun protection essential for millions of outdoor workers and residents.</p><figure class="research-figure"><a class="figure-open" href="assets/figure-4-4.webp" data-image="assets/figure-4-4.webp" data-alt="UV Index Map of Thailand in March 2026" target="_blank" rel="noopener"><img src="assets/figure-4-4.webp" alt="UV Index Map of Thailand in March 2026, showing high to extreme levels" width="875" height="825" loading="lazy"><span class="figure-zoom">View full size</span></a><figcaption>Figure 1. UV Index Map of Thailand in March 2026 [8].</figcaption></figure></div></details>
+        </div>
+          <figure class="context-photo">
+            <img src="assets/client-community-consultation-2.webp" alt="MELANIFY team members taking part in a research consultation" width="1800" height="1013" loading="lazy">
+          </figure>
         </div>
         <p>Under extreme UV levels, millions of residents and tourists across Thailand require daily sun protection, and society has relied heavily on synthetic chemical sunscreens. However, these contemporary sunscreens come with several hidden costs that may be detrimental to both humans and the environment.</p>
         <h2 id="current-solutions">Current Solutions</h2>
@@ -86,7 +97,29 @@
         <h2 id="our-solution">Our Solution <span class="heading-aside">MELANIFY</span></h2>
         <p>To address the dual challenges of PET plastic pollution and harmful sunscreen runoff, we engineered MELANIFY, a circular synthetic biology platform designed to convert post-consumer plastic waste into allomelanin, a sustainable biopolymer with potential for broad-spectrum UV protection.</p>
         <p>Before engineering an enzymatic pathway, we selected our target molecule based on its structural, photoprotective, and ecological properties [16, 17, 18, 19]. Unlike human skin pigments, eumelanin and pheomelanin, which require nitrogenous precursors like L-tyrosine, allomelanin is a class of nitrogen-free melanin synthesized from aromatic catechol compounds commonly produced by fungi and plants [18].</p>
-        <div class="property-grid"><section><span class="eyebrow">01 / LIGHT SHIELDING</span><h3>Broad-Spectrum Protection</h3><ul><li><strong>Full-spectrum potential:</strong> a conjugated aromatic matrix provides light attenuation across UVA, UVB, and UVC spectra [16, 17, 19].</li><li><strong>Photostability:</strong> melanin’s structure supports prolonged absorption of radiation [16, 19].</li></ul></section><section><span class="eyebrow">02 / NITROGEN-FREE BACKBONE</span><h3>Built for Bioconversion</h3><ul><li><strong>Bioconversion alignment:</strong> derived from catecholate precursors rather than nitrogenous amino acids like L-tyrosine [18].</li><li><strong>Circular synthesis:</strong> connects PET monomer degradation with TPA → PCA → catechol [18].</li></ul></section><section><span class="eyebrow">03 / ANTIOXIDANT ACTIVITY</span><h3>ROS Scavenging</h3><ul><li><strong>Cellular defense:</strong> free-radical scavenging offers a route to reducing UV-induced oxidative stress [16, 17, 19].</li><li><strong>Safe quenching:</strong> the target is effective radical neutralization without harmful secondary products [16, 17].</li></ul></section><section><span class="eyebrow">04 / MARINE COMPATIBILITY</span><h3>Designed with Reefs in Mind</h3><ul><li><strong>Ecological goal:</strong> avoid the marine toxicity associated with some synthetic organic UV filters [16, 17, 18, 19].</li><li><strong>Biodegradability:</strong> investigate the breakdown and compatibility of fungal/plant-type pigments in marine conditions [16, 18, 19].</li></ul></section></div>
+        <section class="allomelanin-diagram" aria-label="Four properties of allomelanin">
+          <section class="melanin-branch melanin-branch-top">
+            <span class="eyebrow">BRANCH 1</span>
+            <h3>Broad-Spectrum Light Shielding</h3>
+            <ul><li><strong>Full-Spectrum Protection:</strong> Its densely conjugated aromatic matrix provides continuous light attenuation across the UVA, UVB, and UVC spectra [16, 17, 19].</li><li><strong>High Photostability:</strong> Absorbs solar radiation over extended periods without photodegrading or breaking down into hazardous fragments [16, 19].</li></ul>
+          </section>
+          <section class="melanin-branch melanin-branch-left">
+            <span class="eyebrow">BRANCH 2</span>
+            <h3>Nitrogen-Free Chemical Backbone</h3>
+            <ul><li><strong>Bioconversion Alignment:</strong> Derived from catecholate precursors rather than nitrogenous amino acids like L-tyrosine [18].</li><li><strong>Circular Synthesis:</strong> Enables direct, low-cost biosynthesis downstream of PET monomer degradation (TPA → PCA → Catechol) [18].</li></ul>
+          </section>
+          <figure class="melanin-core"><img src="assets/allomelanin-structure.webp" alt="Conceptual allomelanin structure connecting its four material properties" width="1024" height="559" loading="lazy"></figure>
+          <section class="melanin-branch melanin-branch-right">
+            <span class="eyebrow">BRANCH 3</span>
+            <h3>Potent Antioxidant &amp; ROS Scavenging</h3>
+            <ul><li><strong>Cellular Defense:</strong> Actively quenches damaging Reactive Oxygen Species (ROS) induced by UV exposure, preventing dermal oxidative stress and inflammation [16, 17, 19].</li><li><strong>Safe Quenching:</strong> Neutralizes free radicals without generating reactive secondary intermediates [16, 17].</li></ul>
+          </section>
+          <section class="melanin-branch melanin-branch-bottom">
+            <span class="eyebrow">BRANCH 4</span>
+            <h3>Marine Biocompatibility &amp; Coral Safety</h3>
+            <ul><li><strong>Zero Eco-Toxicity:</strong> Completely non-toxic to sensitive marine species, eliminating the bleaching and larval deformities caused by synthetic organic UV filters [16, 17, 18, 19].</li><li><strong>Rapid Biodegradation:</strong> Being a naturally occurring fungal/plant-type pigment, it breaks down harmlessly in coastal marine ecosystems [16, 18, 19].</li></ul>
+          </section>
+        </section>
         <h3>Engineering Strategy: Dual-Host Division of Labor</h3><p>Building a whole metabolic pathway from a complicated polymer, PET, to a polymerized pigment, allomelanin, within a single microbial host risks metabolic strain, cellular toxicity, and enzyme expression bottlenecks. MELANIFY uses a dual-host approach, splitting the metabolic load between two specialized chassis:</p>
         <div class="host-grid"><section><span class="eyebrow">THE SECRETORY HOST</span><h3><i>Pichia pastoris</i></h3><p>High-density extracellular enzyme secretion breaks down solid PET outside the cell without requiring cell lysis.</p></section><section><span class="eyebrow">THE BIOCONVERSION HOST</span><h3><i>Escherichia coli</i></h3><p>Membrane-displayed enzymes and intracellular metabolic operons connect PET monomers to catechol production. The present design omits the TphC transporter, so substrate access requires lysate or permeabilised cells.</p></section></div>
         <h3>The 5-Step Enzymatic Cascade</h3><figure class="research-figure"><a class="figure-open" href="assets/client-enzymatic-cascade.webp" data-image="assets/client-enzymatic-cascade.webp" data-alt="Dual-host enzymatic cascade from PET plastic to catechol-melanin" target="_blank" rel="noopener"><img src="assets/client-enzymatic-cascade.webp" alt="MELANIFY pathway showing PETase, MHETase, Tph enzymes, and AroY converting PET into catechol-melanin" loading="lazy" width="1080" height="750"><span class="figure-zoom">View full size</span></a><figcaption>The MELANIFY dual-host pathway from PET waste to allomelanin.</figcaption></figure>
@@ -226,6 +259,19 @@
             href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
         <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
       </nav>
+    </div>
+    <div class="footer-sponsor-row">
+      <div class="footer-partners">
+        <h2 class="eyebrow">OUR PARTNERS</h2>
+        <div class="footer-partner-logos">
+          <img class="partner-strip" src="assets/client-partners.webp" alt="BCCU Biochemistry Science Chula, Anthropic, SnapGene, GenScript, IDT, and Twist Bioscience" width="882" height="73" loading="lazy">
+          <img class="school-logo" src="assets/client-asb.webp" alt="American School of Bangkok Sukhumvit" width="447" height="447" loading="lazy">
+        </div>
+      </div>
+      <div class="sponsor-group">
+        <h2 class="eyebrow">OUR SPONSOR</h2>
+        <img src="assets/client-smt.webp" alt="SMT sponsor logo" width="1280" height="1080" loading="lazy">
+      </div>
     </div>
     <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
         project</span><a href="#top">Back to top ↑</a></div>

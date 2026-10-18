@@ -1,0 +1,133 @@
+/* Main-menu states use the same blue as the site branding. */
+#main-nav > a,
+#main-nav .nav-group > summary {
+  padding: 12px 14px;
+  min-height: 44px;
+  border-radius: 6px;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+#main-nav .nav-dropdown a {
+  transition: color .2s ease, background-color .2s ease;
+}
+
+#main-nav > a:is(:hover, :focus-visible),
+#main-nav .nav-group > summary:is(:hover, :focus-visible),
+#main-nav .nav-dropdown a:is(:hover, :focus-visible),
+#main-nav .nav-group[open] > summary {
+  color: #fff;
+  background-color: var(--ocean);
+}
+
+#main-nav .nav-group[open] > .nav-dropdown {
+  animation: menu-appear .2s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.toc a,
+.footer-links a {
+  transition: color .2s ease, background-color .2s ease;
+}
+
+/* Partner logos sit to the left of the sponsor, above the footer's bottom line. */
+.footer-sponsor-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px;
+  align-items: start;
+  gap: 40px;
+  max-width: 1184px;
+  margin-inline: auto;
+  padding-block: 30px;
+  border-top: 1px solid #ffffff25;
+}
+
+.footer-partners,
+.footer-sponsor-row .sponsor-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  gap: 16px;
+}
+
+.footer-sponsor-row .eyebrow {
+  margin: 0;
+  color: #d9e8f1;
+  font-size: .75rem;
+}
+
+.footer-partner-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  max-width: 100%;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ffffff60;
+  border-radius: 8px;
+}
+
+.footer-partner-logos .partner-strip {
+  width: min(100%, 560px);
+  height: auto;
+  mix-blend-mode: normal;
+}
+
+.footer-partner-logos .school-logo {
+  width: 80px;
+  height: auto;
+  mix-blend-mode: normal;
+}
+
+.footer-sponsor-row .sponsor-group > img {
+  width: 112px;
+  height: auto;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #ffffff60;
+  border-radius: 8px;
+  mix-blend-mode: normal;
+}
+
+.notebook-document-footer .footer-sponsor-row {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--deep);
+  border-radius: 8px;
+}
+
+.button,
+.engineering-button {
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+@keyframes menu-appear {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 861px) {
+  #main-nav { gap: clamp(8px, 1.5vw, 24px); }
+}
+
+@media (max-width: 860px) {
+  #main-nav .nav-group > summary,
+  #main-nav > a { padding: 13px 14px; }
+}
+
+@media (max-width: 640px) {
+  .footer-sponsor-row { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .footer-partner-logos { gap: 14px; padding: 12px; }
+  .footer-partner-logos .school-logo { width: 72px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main-nav .nav-group[open] > .nav-dropdown { animation: none; }
+  #main-nav a,
+  #main-nav summary,
+  .toc a,
+  .footer-links a,
+  .button,
+  .engineering-button { transition: none; }
+}

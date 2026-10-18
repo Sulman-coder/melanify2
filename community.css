@@ -1,4 +1,19 @@
 /* Community and venture chapters. Content and controls remain native HTML. */
+.community-framework.reflection-update { display: block; padding: 30px; }
+.reflection-update > h2 { margin: 0; font-size: clamp(1.9rem, 3vw, 2.5rem); }
+.reflection-update > p { margin-bottom: 28px; }
+.reflection-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 32px; align-items: center; }
+.reflection-art { margin: 0; }
+.reflection-art img { width: 100%; height: auto; }
+.reflection-grid h3 { margin-top: 0; }
+.section-anchor { display: block; height: 0; scroll-margin-top: 110px; }
+@media (max-width: 900px) {
+  .reflection-grid { grid-template-columns: 1fr; gap: 26px; }
+  .reflection-art { max-width: 350px; margin-inline: auto; }
+}
+@media (max-width: 640px) {
+  .community-framework.reflection-update { padding: 22px 18px; }
+}
 .community-hero { background-color: #edf7fb; background-image: linear-gradient(90deg,#edf7fb 5%,#edf7fbf5 42%,#edf7fb55 78%,#edf7fb22),var(--chapter-photo); background-size: cover,55% auto; background-position: center,right center; background-repeat: no-repeat; }
 body[data-page="education"] { --chapter-photo: url('assets/client-community-primary-workshop-1.webp'); }
 body[data-page="entrepreneurship"] { --chapter-photo: url('assets/client-community-recycling-stakeholders.webp'); }
