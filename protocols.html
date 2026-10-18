@@ -33,6 +33,52 @@
   <a class="skip-link" href="#main">
    Skip to content
   </a>
+   <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="MELANIFY home">
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+      </a> <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <details class="nav-group">
+          <summary>Project<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="description.html">Description: Problem Breakdown</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Wet Lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="engineering.html">Engineering</a>
+            <a href="results.html">Results</a>
+            <a href="protocols.html">Protocols &amp; Notebook</a>
+            <a href="parts.html">Parts</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="safety.html">Safety</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="human-practices.html">Integrated Human Practices</a>
+            <a href="education.html">Education</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Team<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="members.html">Members</a>
+            <a href="attributions.html">Attributions</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+
  
   <div class="page-banner" aria-hidden="true">
     <img src="images/banner.jpeg" alt="" width="1024" height="589" decoding="async" fetchpriority="high">
@@ -135,14 +181,23 @@
    </div>
   </main>
   <footer class="site-footer">
-      <div class="footer-top"><div><a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a><p>Rethinking plastic.<br>Exploring what comes next.</p></div>
-        <nav class="footer-links" aria-label="Footer navigation"><div><span>PROJECT</span><a href="description.html">Our project</a></div>
-<div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
-<div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
-<div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
-</nav>
+    <div class="footer-top">
+    
+    <div><a class="brand" href="index.html" aria-label="MELANIFY home">
+    <img src="images/logo2.jpeg" alt="MELANIFY Logo" class="footer-logo" style="width: 80px;"></a>
+        <p>Rethinking plastic.<br>Exploring what comes next.</p>
       </div>
-      <div class="footer-sponsor-row">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div><span>PROJECT</span><a href="description.html">Our project</a></div>
+        <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
+            href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
+            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+        <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
+            href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+        <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
+      </nav>
+    </div>
+    <div class="footer-sponsor-row">
       <div class="footer-partners">
         <h2 class="eyebrow">OUR PARTNERS</h2>
         <div class="footer-partner-logos">
@@ -155,8 +210,9 @@
         <img src="assets/client-smt.webp" alt="SMT sponsor logo" width="1280" height="1080" loading="lazy">
       </div>
     </div>
-    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research project</span><a href="#top">Back to top ↑</a></div>
-    </footer>
+    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
+        project</span><a href="#top">Back to top ↑</a></div>
+  </footer>
   <dialog aria-label="Enlarged research figure" class="figure-dialog">
    <button aria-label="Close enlarged figure" class="dialog-close">
     Close
