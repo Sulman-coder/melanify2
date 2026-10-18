@@ -153,15 +153,17 @@
   object-fit: contain;
 }
 
-/* Revised homepage hero and the two independently animated logo layers. */
+/* Homepage hero and animated bottle-and-sun illustration. */
 .home-hero {
   position: relative;
+  isolation: isolate;
   background: #c8dbea url("images/Melanify.png") center / cover no-repeat;
   padding: clamp(24px, 4vw, 48px) 20px 60px;
 }
 
-.home-hero #logo1,
-.home-hero #logo2 {
+.home-hero #logo1 {
+  position: relative;
+  z-index: 1;
   width: min(100%, 760px);
   max-width: none;
   padding: 0;
@@ -170,17 +172,58 @@
 }
 
 .home-hero #logo1 { animation: home-mark-float 6s ease-in-out infinite; }
-.home-hero #logo2 { animation: home-wordmark-breathe 5s ease-in-out infinite; }
 
-.home-hero #logo1 img,
-.home-hero #logo2 img {
+.home-hero #logo1 img {
   width: 100%;
   height: auto;
   max-height: none;
   object-fit: contain;
 }
 
+/* Keep the animated wordmark in the foreground, across the illustration. */
+.hero-wordmark {
+  position: relative;
+  z-index: 3;
+  grid-area: 1 / 1;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(3px, .6vw, 8px);
+  width: min(100%, 720px);
+  max-width: 100%;
+  margin: 0;
+  padding-block: 16px;
+  overflow: hidden;
+}
+
+.wordmark-letter {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  height: clamp(40px, 7.2vw, 96px);
+  animation: wordmark-letter-enter .72s cubic-bezier(.16, 1, .3, 1) both;
+  transform-origin: center bottom;
+}
+
+.wordmark-letter:nth-child(1) { animation-delay: .10s; }
+.wordmark-letter:nth-child(2) { animation-delay: .46s; }
+.wordmark-letter:nth-child(3) { animation-delay: .82s; }
+.wordmark-letter:nth-child(4) { animation-delay: 1.18s; }
+.wordmark-letter:nth-child(5) { animation-delay: 1.54s; }
+.wordmark-letter:nth-child(6) { animation-delay: 1.90s; }
+.wordmark-letter:nth-child(7) { animation-delay: 2.26s; }
+.wordmark-letter:nth-child(8) { animation-delay: 2.62s; }
+
+@keyframes wordmark-letter-enter {
+  from { opacity: 0; transform: translateY(100svh) scale(.92); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 .home-hero .hero-copy {
+  position: relative;
+  z-index: 2;
   opacity: 1;
   transform: none;
   transition: opacity .65s ease, transform .65s ease;
@@ -208,18 +251,42 @@
   50% { transform: translateY(-8px) rotate(1deg); }
 }
 
-@keyframes home-wordmark-breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.025); }
-}
-
 @media (max-width: 640px) {
   .home-hero { padding-inline: 16px; }
   .home-hero .hero-copy { padding-inline: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home-hero #logo1,
-  .home-hero #logo2 { animation: none; }
+  .home-hero #logo1 { animation: none; }
+  .wordmark-letter { animation: none; opacity: 1; transform: none; }
   .home-hero .hero-copy.reveal-pending { opacity: 1; transform: none; }
+}
+
+
+
+#our-purpose [data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#our-purpose [data-reveal].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#our-purpose [data-reveal]:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+#our-purpose [data-reveal]:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+#our-purpose [data-reveal]:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+#our-purpose [data-reveal]:nth-child(4) {
+  transition-delay: 0.4s;
 }
