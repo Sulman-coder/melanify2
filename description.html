@@ -5,135 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#075473">
     <meta name="description" content="MELANIFY explores a biological pathway from PET plastic waste to allomelanin. Discover our engineering, research and community work.">
-    <title>Project description | MELANIFY</title>
+    <title>Project Description | MELANIFY</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer=""></script>
-  </head>
+    <style>
+        .brand {
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+.brand-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+    </style>
+    <link rel="stylesheet" href="banner.css">
+</head>
   <body data-page="description">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <!-- <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a> -->
+          <a class="brand" href="index.html" aria-label="MELANIFY home">
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
         <nav id="main-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
-          <details class="nav-group">
-            <summary class="current">Project<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="description.html" aria-current="page">Project description</a>
-              <a href="entrepreneurship.html">Entrepreneurship</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary>Wet lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="engineering.html">Engineering</a>
-              <a href="protocols.html">Protocols</a>
-              <a href="results.html">Results</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary>Beyond the lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="human-practices.html">Human practices</a>
-              <a href="education.html">Education</a>
-            </div>
-          </details>
+          <details class="nav-group"><summary class="current">Project<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="description.html" aria-current="page">Description: Problem Breakdown</a>
+          </div></details>
+          <details class="nav-group"><summary>Wet Lab<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="engineering.html">Engineering</a>
+            <a href="results.html">Results</a>
+            <a href="protocols.html">Protocols &amp; Notebook</a>
+            <a href="parts.html">Parts</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="safety.html">Safety</a>
+          </div></details>
+          <details class="nav-group"><summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="human-practices.html">Integrated Human Practices</a>
+            <a href="education.html">Education</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+          </div></details>
+          <details class="nav-group"><summary>Team<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="members.html">Members</a>
+            <a href="attributions.html">Attributions</a>
+          </div></details>
         </nav>
-        <a class="header-project" href="engineering.html">Explore the science<span class="tiny-orbit" aria-hidden="true"></span></a>
       </div>
       <div class="reading-progress" aria-hidden="true"></div>
     </header>
+
+<div class="page-banner" aria-hidden="true">
+    <img src="images/banner.jpeg" alt="" width="1024" height="589" decoding="async" fetchpriority="high">
+  </div>
+
+
+
     <main id="main">
-      <section class="chapter-hero" id="top">
-        <div class="wrap">
-          <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Description</div>
-          <div class="eyebrow">THE PROJECT</div>
-          <h1>A waste problem.<br>A biological possibility.</h1>
-          <p>Exploring how synthetic biology can connect plastic recovery with a new generation of functional biomaterials.</p>
-          <span class="chapter-number" aria-hidden="true">01</span>
+
+      <section class="chapter-hero photo-hero" id="top"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Project</div><div class="eyebrow">PROJECT DESCRIPTION</div><h1>A waste problem.<br><em>A biological possibility.</em></h1><p>Connecting plastic recovery with a new generation of functional biomaterials.</p></div></section>
+      <div class="article-layout wrap"><aside class="article-sidebar"><div class="toc-sticky"><span class="small-label">ON THIS PAGE</span><nav class="toc" aria-label="Chapter contents"><a href="#abstract">Abstract</a><a href="#our-why">Our Why</a><a href="#current-solutions">Current Solutions</a><a href="#our-solution">Our Solution</a><a href="#future-implications">Future Implications</a><a href="#references">References</a></nav></div></aside>
+      <article class="article-content" id="chapter-content">
+        <h2 id="abstract">Abstract</h2>
+        <p>Polyethylene terephthalate (PET) plastic is heavily utilized in global single-serve beverage packaging [1], resulting in an estimated 500 billion to 1 trillion plastic bottles consumed globally each year [2]. Because PET plastic takes up to 500 years to degrade, the vast majority of this non-biodegradable waste accumulates in landfills and marine environments [1, 2]. Concurrently, human populations are exposed to solar ultraviolet (UV) radiation, which is carcinogenic and a leading cause of skin cancers, cataracts, and cellular DNA damage [3]. Chemical sunscreens are widely used to reduce overexposure; however, active ingredients such as oxybenzone have been linked to skin irritation, contact dermatitis, and concerns about endocrine disruption [4, 5], as well as degradation of marine ecosystems through coral bleaching and toxic accumulation [4, 5]. We aim to bridge these dual challenges by converting post-consumer PET plastic waste into allomelanin, a biopolymer with potential for broad-spectrum UV protection.</p>
+        <h2 id="our-why">Our Why</h2>
+        <p>As young researchers living in Thailand, we witness the dual threats of extreme environmental degradation and significant health risks every day. Our country is at a critical crossroads: our bustling metropolitan centers and rivers are overrun with mismanaged plastic garbage, while our tropical position exposes millions of citizens and coastal ecosystems to constant, harsh ultraviolet radiation.</p>
+        <p>We concluded that the two distinct crises, plastic buildup and UV exposure, are inextricably linked. Our project was created not only as a laboratory experiment, but also as a response to our immediate surroundings, based on localized facts in Thailand.</p>
+        <div class="context-accordions">
+          <details class="context-detail"><summary>Plastic Pollution in Thailand <span class="chevron" aria-hidden="true"></span></summary><div><p>Despite a reported 88.8% municipal waste collection rate, Thailand generates an estimated 428 kilotons of mismanaged plastic waste annually due to collection gaps and unsanitary disposal facilities [7]. While rural areas produce 70.1% of the waste exposed to environmental wash-off, extreme urban density makes Bangkok a critical leakage point [7]. Within Thailand’s high-priority river catchments, just 10 districts in and around Bangkok account for 51.7% of all exposed mismanaged plastic [7].</p><p>Massive volumes of this uncollected waste are dumped directly into waterways like the Chao Phraya River [7]. Once in the river system, 47.6% of this plastic flows into the ocean, resulting in an average marine discharge of 9.3 kilotons annually [7]. This figure surges to 14.3 kilotons during the rainy season, heavily contaminating vulnerable coastal ecosystems [7].</p></div></details>
+          <details class="context-detail"><summary>The UV Radiation in Thailand <span class="chevron" aria-hidden="true"></span></summary><div><p>Thailand endures severe year-round solar radiation, with the national UV index averaging 11 and 12 annually and surging to extreme levels between 13 and 14 across the country during the March hot season [8, 10]. Across major provinces like Bangkok and Phuket, a mere 15 to 20 minutes of midday exposure can trigger acute sunburn [10]. The World Health Organization classifies ultraviolet radiation as a carcinogen that damages cellular DNA and can affect the skin, eyes, and immune system [9]. Over time, chronic exposure leads to severe health conditions, including cataracts, premature skin aging, and skin cancers [9]. Because global health guidelines recommend sun protection at a UV index of 3 or above [9], Thailand’s extreme solar radiation levels make daily sun protection essential for millions of outdoor workers and residents.</p><figure class="research-figure"><a class="figure-open" href="assets/client-uv-thailand.webp" data-image="assets/client-uv-thailand.webp" data-alt="UV Index Map of Thailand in March 2026" target="_blank" rel="noopener"><img src="assets/client-uv-thailand.webp" alt="UV Index Map of Thailand in March 2026, showing high to extreme levels" width="875" height="825" loading="lazy"><span class="figure-zoom">View full size</span></a><figcaption>Figure 1. UV Index Map of Thailand in March 2026 [8].</figcaption></figure></div></details>
         </div>
-      </section>
-      <div class="chapter-banner">
-        <img src="assets/ocean-palette.png" alt="" width="906" height="551">
-        <span>MELANIFY / DESCRIPTION</span>
-      </div>
-      <div class="article-layout wrap">
-        <aside class="article-sidebar">
-          <div class="toc-sticky">
-            <span class="small-label">ON THIS PAGE</span>
-            <nav class="toc" aria-label="Chapter contents">
-              <a class="toc-primary" href="#the-pet-challenge">The PET challenge</a>
-              <a class="toc-primary" href="#the-local-context">The local context</a>
-              <a class="toc-primary" href="#the-proposed-pathway">The proposed pathway</a>
-              <a class="toc-primary" href="#references">References</a>
-            </nav>
-            <div class="sidebar-note">
-              <span>01 / 07</span>
-              <p>Every iteration brings<br>a new perspective.</p>
+        <p>Under extreme UV levels, millions of residents and tourists across Thailand require daily sun protection, and society has relied heavily on synthetic chemical sunscreens. However, these contemporary sunscreens come with several hidden costs that may be detrimental to both humans and the environment.</p>
+        <h2 id="current-solutions">Current Solutions</h2>
+        <p>To shield human skin from UV radiation, commercial manufacturers rely heavily on synthetic UV filters like oxybenzone, octinoxate, and octocrylene [11, 12, 13, 14]. While effective at absorbing radiation, these chemical formulations raise health and environmental concerns.</p>
+        <div class="solution-issues"><section><span class="issue-number">01</span><h3>Human Health Side Effects</h3><p>Oxybenzone can penetrate the dermal barrier and has been associated with skin irritation and contact dermatitis; its potential endocrine effects are also under study [12, 14].</p></section><section><span class="issue-number">02</span><h3>Marine Degradation &amp; Aquatic Toxicity</h3><p>Over 14,000 tons of sunscreen are estimated to wash into oceans annually, with some UV filters linked to coral bleaching, larval DNA damage, and toxicity in aquatic wildlife [11, 13, 14].</p></section><section><span class="issue-number">03</span><h3>Strict Legal Enforcement</h3><p>Thailand’s Department of National Parks has banned specified harmful UV filters across marine national parks, with fines of up to 100,000 THB [15].</p></section></div>
+        <p>While alternative mineral sunscreens, zinc oxide and titanium dioxide, have gained popularity, they can leave a chalky white cast on skin. Questions about the environmental effects of some nanoparticle formulations remain, and these alternatives do not address the plastic waste problem [11, 12].</p>
+        <h2 id="our-solution">Our Solution <span class="heading-aside">MELANIFY</span></h2>
+        <p>To address the dual challenges of PET plastic pollution and harmful sunscreen runoff, we engineered MELANIFY, a circular synthetic biology platform designed to convert post-consumer plastic waste into allomelanin, a sustainable biopolymer with potential for broad-spectrum UV protection.</p>
+        <p>Before engineering an enzymatic pathway, we selected our target molecule based on its structural, photoprotective, and ecological properties [16, 17, 18, 19]. Unlike human skin pigments, eumelanin and pheomelanin, which require nitrogenous precursors like L-tyrosine, allomelanin is a class of nitrogen-free melanin synthesized from aromatic catechol compounds commonly produced by fungi and plants [18].</p>
+        <div class="property-grid"><section><span class="eyebrow">01 / LIGHT SHIELDING</span><h3>Broad-Spectrum Protection</h3><ul><li><strong>Full-spectrum potential:</strong> a conjugated aromatic matrix provides light attenuation across UVA, UVB, and UVC spectra [16, 17, 19].</li><li><strong>Photostability:</strong> melanin’s structure supports prolonged absorption of radiation [16, 19].</li></ul></section><section><span class="eyebrow">02 / NITROGEN-FREE BACKBONE</span><h3>Built for Bioconversion</h3><ul><li><strong>Bioconversion alignment:</strong> derived from catecholate precursors rather than nitrogenous amino acids like L-tyrosine [18].</li><li><strong>Circular synthesis:</strong> connects PET monomer degradation with TPA → PCA → catechol [18].</li></ul></section><section><span class="eyebrow">03 / ANTIOXIDANT ACTIVITY</span><h3>ROS Scavenging</h3><ul><li><strong>Cellular defense:</strong> free-radical scavenging offers a route to reducing UV-induced oxidative stress [16, 17, 19].</li><li><strong>Safe quenching:</strong> the target is effective radical neutralization without harmful secondary products [16, 17].</li></ul></section><section><span class="eyebrow">04 / MARINE COMPATIBILITY</span><h3>Designed with Reefs in Mind</h3><ul><li><strong>Ecological goal:</strong> avoid the marine toxicity associated with some synthetic organic UV filters [16, 17, 18, 19].</li><li><strong>Biodegradability:</strong> investigate the breakdown and compatibility of fungal/plant-type pigments in marine conditions [16, 18, 19].</li></ul></section></div>
+        <h3>Engineering Strategy: Dual-Host Division of Labor</h3><p>Building a whole metabolic pathway from a complicated polymer, PET, to a polymerized pigment, allomelanin, within a single microbial host risks metabolic strain, cellular toxicity, and enzyme expression bottlenecks. MELANIFY uses a dual-host approach, splitting the metabolic load between two specialized chassis:</p>
+        <div class="host-grid"><section><span class="eyebrow">THE SECRETORY HOST</span><h3><i>Pichia pastoris</i></h3><p>High-density extracellular enzyme secretion breaks down solid PET outside the cell without requiring cell lysis.</p></section><section><span class="eyebrow">THE BIOCONVERSION HOST</span><h3><i>Escherichia coli</i></h3><p>Membrane-displayed enzymes and intracellular metabolic operons connect PET monomers to catechol production. The present design omits the TphC transporter, so substrate access requires lysate or permeabilised cells.</p></section></div>
+        <h3>The 5-Step Enzymatic Cascade</h3><figure class="research-figure"><a class="figure-open" href="assets/client-enzymatic-cascade.webp" data-image="assets/client-enzymatic-cascade.webp" data-alt="Dual-host enzymatic cascade from PET plastic to catechol-melanin" target="_blank" rel="noopener"><img src="assets/client-enzymatic-cascade.webp" alt="MELANIFY pathway showing PETase, MHETase, Tph enzymes, and AroY converting PET into catechol-melanin" loading="lazy" width="1080" height="750"><span class="figure-zoom">View full size</span></a><figcaption>The MELANIFY dual-host pathway from PET waste to allomelanin.</figcaption></figure>
+        <div class="description-pathway"><h3>Explore the MELANIFY Pathway</h3><div class="pathway-explorer" data-reveal="">
+          <nav class="pathway-tabs" aria-label="Explore pathway stages">
+            <a id="pathway-tab-0" class="pathway-tab" href="#pathway-panel-0" data-stage="0" ><span>01</span>PET</a>
+            <a id="pathway-tab-1" class="pathway-tab" href="#pathway-panel-1" data-stage="1" ><span>02</span>MHET</a>
+            <a id="pathway-tab-2" class="pathway-tab" href="#pathway-panel-2" data-stage="2" ><span>03</span>TPA</a>
+            <a id="pathway-tab-3" class="pathway-tab" href="#pathway-panel-3" data-stage="3" ><span>04</span>PCA</a>
+            <a id="pathway-tab-4" class="pathway-tab" href="#pathway-panel-4" data-stage="4" ><span>05</span>Catechol</a>
+            <a id="pathway-tab-5" class="pathway-tab" href="#pathway-panel-5" data-stage="5"><span>06</span>Allomelanin</a>
+          </nav>
+          <div class="pathway-panel" id="pathway-panel-0" aria-label="PET">
+            <div class="stage-number" aria-hidden="true">01</div>
+            <div class="stage-copy">
+              <span class="eyebrow">The starting material</span>
+              <h3>PET plastic</h3>
+              <p>A persistent polymer becomes the starting point for our proposed upcycling pathway. Engineered Pichia pastoris is used to produce and secrete HotPETase.</p>
+              <div class="stage-tags">
+                <span>HotPETase</span>
+                <span>Pichia pastoris</span>
+              </div>
+              <a class="text-link" href="engineering.html#hotpetase">Explore this stage<span class="link-line"></span></a>
             </div>
           </div>
-        </aside>
-        <article class="article-content" id="chapter-content">
-          <h2 id="the-pet-challenge" class="" data-reveal="">The PET challenge</h2>
-          <p>The estimated annual global PET production exceeds 82 million metric tons (Bhattacharjya et al., 2024). However, current treatment methods such as mechanical recycling, chemical recycling (pyrolysis, glycolysis), and landfilling are too energy-intensive, costly, and environmentally detrimental. Mechanical recycling degrades fiber quality with each cycle ; chemical recycling consumes up to 60% more energy, and it generates greenhouse gas emissions exceeding virgin PET production; and landfilling creates persistent contamination for up to 162+ years (Guo et al., 2025). This highlights the need for an affordable and scalable alternative that doesn’t compromise its environmental benefits. In 2016, Japanese researchers discovered two enzymes: PETase and MHETase (Yoshida et al., 2016). It shows promising capabilities in breaking down PET plastic. However, plastic degradation often operates well at higher temperatures (65-72°C). Below 75°C (glass state), amorphous chains — regions of PET plastic are the only sites where enzymes can degrade the polymer — are rigid and frozen, making enzyme binding slow and inefficient despite being chemically accessible. To overcome these thermal barriers, researchers developed HotPETase. An enzyme that can maintain plastic degradation around 80.5°C (Bell et al., 2022; Avilan et al., 2023). This is crucial because amorphous plastic, ~70% of all PET plastic in consumer products (Arnal et al., 2023; Tournier et al., 2020), begins to soften around 70°C, the glass transition temperature (Tg) of PET (Thomsen et al., 2022; Wei et al., 2025). Yet, a significant limitation remains: HotPETase typically begins to lose activity within 2–3 hours at 60–65°C (Arnal et al., 2023), this is not ideal considering that PET breakdown to &gt;90% conversion takes 10–24 hours depending on enzyme variant and conditions (Tournier et al., 2020; Guo et al., 2025).</p>
-          <p>Repeated mechanical recycling has been shown to reduce the molecular quality of PET, supporting the development of complementary recovery methods. A recent study found that during repeated extrusion of bottle-grade PET, the intrinsic viscosity fell from approximately 0.80 to 0.65 dL/g, which is a decline of about 19%. It indicates polymer chain degradation under experimental conditions, rather than a universal 19% decline in overall quality. (Strakova et al., 2026). However, repeated chemical recycling does not necessarily cause progressive quality loss. It generally depolymerizes PET polymers to recover building blocks. Through the process of acetolysis at 280°C for two hours, researchers were able to recover TPA at 95.8% yield with &gt;99.7% purity. (Peng et al., 2023). This demonstrates effective monomer recovery, although energy requirements and purification must still be considered when evaluating sustainability. Biological processing offers another route. Some microorganisms have the ability to produce enzymes that hydrolyses PET. The PETase enzyme possesses the ability to break PET into smaller compounds, including MHET where MHET then gets depolymerised even further to release TPA and EG through MHETase. Enzymatic depolymerization and biological upcycling are distinct stages where enzymatic depolymerization breaks down the polymer, while biological upcycling uses engineered biochemical pathways to convert recovered compounds into different products. (Tournier et al., 2020) achieved at least 90% depolymerization within ten hours using an engineered hydrolase under the experimental conditions, demonstrating the potential of enzyme-based recovery. Aside from recovering monomers, Sandler and Wallace (2021) engineered Escherichia coli to convert TPA into vanillin, achieving 79% conversion rate after optimization. They also demonstrated vanillin production from PET-bottle-derived material. Crucially, this percentage describes TPA conversion, not the fraction of an entire bottle</p>
-          <p>transformed into vanillin. These findings establish a pathway for converting PET-derived carbon into valuable chemicals.</p>
-          <h2 id="the-local-context" class="" data-reveal="">The local context</h2>
-          <p>Despite a reported 88.8% municipal waste collection rate, Thailand generates an estimated 428 kilotons of mismanaged plastic waste annually due to collection gaps and unsanitary disposal facilities [1]. While rural areas produce 70.1% of the waste exposed to environmental wash-off, extreme urban density makes Bangkok a critical leakage point [1]. Within Thailand's high-priority river catchments, just 10 districts in and around Bangkok account for 51.7% of all exposed mismanaged plastic [1]. Massive volumes of this uncollected waste are dumped directly into waterways like the Chao Phraya River [1]. Once in the river system, 47.6% of this plastic inevitably flows into the ocean, resulting in an average marine discharge of 9.3 kilotons annually [1]. This figure surges to 14.3 kilotons during the rainy season, heavily contaminating vulnerable coastal ecosystems [1].</p>
-          <p>Thailand endures severe year-round solar radiation, with the national UV index averaging 11 and 12 annually and surging to extreme levels between 13 and 14 across the country during the March hot season [2, 4]. Across major provinces like Bangkok and Phuket, a mere 15 to 20 minutes of midday exposure triggers acute sunburn [4]. The World Health Organization classifies this intense ultraviolet radiation as a direct carcinogen that damages cellular DNA, inflames skin, and weakens immunity [3]. Over time, chronic exposure leads to severe health conditions, including cataracts, premature skin aging, and life-threatening skin cancers [3]. Because global health guidelines mandate sun protection at a UV index of 3 or above [3], Thailand’s extreme solar radiation levels make daily broad-spectrum sunscreen application an essential health requirement for millions of outdoor workers and residents.</p>
-          <figure class="research-figure" data-reveal="">
-            <a class="figure-open" data-image="assets/figure-4-4.webp" data-alt="Supplied Description figure, source page 4" aria-label="Enlarge figure from source page 4" href="assets/figure-4-4.webp" target="_blank" rel="noopener"><img src="assets/figure-4-4.webp" alt="Supplied Description figure from source page 4" width="875" height="825" loading="lazy"><span class="figure-zoom">View full size</span></a>
-            <figcaption><span>FIGURE 01</span>From the supplied research document · p. 4</figcaption>
-          </figure>
-          <p>However, commercial sunscreens rely heavily on synthetic UV filters like Benzophenone-3 (oxybenzone) that function as severe marine contaminants [6]. Once washed into coastal waters, oxybenzone becomes highly toxic to marine life, especially under direct sunlight [6]. At concentrations as low as 6.5 µg/L, it severely deforms coral larvae by damaging their DNA and forcing them to prematurely develop skeletons, which traps and kills the larvae [6]. This directly triggers widespread coral bleaching, which became so significant that in August 2021, Thailand legally banned sunscreens containing oxybenzone, octinoxate, 4-methylbenzylidene camphor, and butylparaben across all marine national parks [5]. This ban exposes a critical gap in technology: people still need daily protection from intense UV radiation, but the environment can no longer survive the chemical runoff required to provide it.</p>
-          <h2 id="the-proposed-pathway" class="" data-reveal="">The proposed pathway</h2>
-          <p>MELANIFY is designed to convert PET plastic waste into allomelanin through a multi-step biological pathway. First, engineered Pichia pastoris produces and secretes HotPETase, which begins degrading PET. Surface-displayed MHETase in E. coli then further breaks down the PET-derived intermediate MHET into terephthalic acid (TPA). The TPA is subsequently fed into an engineered E. coli pathway containing tphA1, tphA2, tphA3, and tphB, which converts TPA into protocatechuate (PCA).</p>
-          <p>From there, MELANIFY converts PCA into the melanin precursor catechol using AroY, with EcdB synthesizing the prenylated-FMN (prFMN) cofactor and EcdD supporting AroY activity and cofactor maturation. Finally, catechol undergoes oxidation and polymerization under open-air, slightly basic conditions with small amounts of CuSO₄, forming catechol-melanin/allomelanin. In short, the core concept is PET → MHET → TPA → PCA → catechol → allomelanin, turning a persistent plastic waste stream into a functional biomaterial.</p>
-          <h2 id="references" class="" data-reveal="">References</h2>
-          <p>1. World Bank. (2022). Plastic waste material flow analysis for Thailand – Summary report. Marine Plastics Series, East Asia and Pacific Region.</p>
-          <p>2. Thai Meteorological Department. (n.d.). UV index. Ozone and Radiation Center. <a href="https://ozone.tmd.go.th/UV_index.htm" target="_blank" rel="noopener noreferrer">https://ozone.tmd.go.th/UV_index.htm</a></p>
-          <p>3. World Health Organization. (2022, June 21). Ultraviolet radiation. <a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation</a></p>
-          <p>4. Sirithanabadeekul, P. (2019, April 18). Thailand’s UV index rating and the risk of sunburn. Samitivej Hospital. <a href="https://www.samitivejhospitals.com/article/detail/uv-index" target="_blank" rel="noopener noreferrer">https://www.samitivejhospitals.com/article/detail/uv-index</a></p>
-          <p>5. Department of National Parks, Wildlife and Plant Conservation. (2021, August 4). Prohibition of sunscreen containing chemicals harmful to coral reefs in national parks. Ministry of Natural Resources and Environment. <a href="https://portal.dnp.go.th/Content/nationalpark?contentId=25456" target="_blank" rel="noopener noreferrer">https://portal.dnp.go.th/Content/nationalpark?contentId=25456</a></p>
-          <p>6. Downs, C. A., Kramarsky-Winter, E., Segal, R., Fauth, J., Knutson, S., Bronstein, O., Ciner, F. R., Jeger, R., Lichtenfeld, Y., Woodley, C. M., Pennington, P., Cadenas, K., Kushmaro, A., &amp; Loya, Y. (2016). Toxicopathological effects of the sunscreen UV filter, oxybenzone (benzophenone-3), on coral planulae and cultured primary cells and its environmental contamination in Hawaii and the U.S. Virgin Islands. Archives of Environmental Contamination and Toxicology, 70(2), 265–288. <a href="https://doi.org/10.1007/s00244-015-0227-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s00244-015-0227-7</a></p>
-          <a class="next-chapter" id="chapter-next" href="engineering.html" data-reveal=""><span><span class="small-label">CONTINUE EXPLORING</span><strong>Engineering</strong></span><span class="next-plus" aria-hidden="true">+</span></a>
-        </article>
+          <div class="pathway-panel" id="pathway-panel-1" aria-label="MHET">
+            <div class="stage-number" aria-hidden="true">02</div>
+            <div class="stage-copy">
+              <span class="eyebrow">Breaking the polymer down</span>
+              <h3>MHET</h3>
+              <p>HotPETase begins PET degradation. Surface-displayed MHETase is intended to convert the resulting MHET into terephthalic acid.</p>
+              <div class="stage-tags">
+                <span>InaVN–MHETase</span>
+                <span>E. coli</span>
+              </div>
+              <a class="text-link" href="engineering.html#inavn-mhetase">Explore this stage<span class="link-line"></span></a>
+            </div>
+          </div>
+          <div class="pathway-panel" id="pathway-panel-2" aria-label="TPA">
+            <div class="stage-number" aria-hidden="true">03</div>
+            <div class="stage-copy">
+              <span class="eyebrow">Connecting recovery to upcycling</span>
+              <h3>Terephthalic acid</h3>
+              <p>The tphA1, tphA2, tphA3 and tphB pathway is designed to convert recovered TPA into protocatechuate, connecting PET degradation with a downstream biological route.</p>
+              <div class="stage-tags">
+                <span>TphA1 / A2 / A3 / B</span>
+                <span>E. coli</span>
+              </div>
+              <a class="text-link" href="engineering.html#tpa-to-pca">Explore this stage<span class="link-line"></span></a>
+            </div>
+          </div>
+          <div class="pathway-panel" id="pathway-panel-3" aria-label="PCA">
+            <div class="stage-number" aria-hidden="true">04</div>
+            <div class="stage-copy">
+              <span class="eyebrow">A new biochemical direction</span>
+              <h3>Protocatechuate</h3>
+              <p>PCA is the intermediate that connects the TPA pathway to catechol production. AroY performs the decarboxylation step with cofactor support from EcdB and EcdD.</p>
+              <div class="stage-tags">
+                <span>AroY / EcdB / EcdD</span>
+                <span>Cofactor-supported conversion</span>
+              </div>
+              <a class="text-link" href="engineering.html#aroy-ecdb-ecdd">Explore this stage<span class="link-line"></span></a>
+            </div>
+          </div>
+          <div class="pathway-panel" id="pathway-panel-4" aria-label="Catechol">
+            <div class="stage-number" aria-hidden="true">05</div>
+            <div class="stage-copy">
+              <span class="eyebrow">The pigment precursor</span>
+              <h3>Catechol</h3>
+              <p>Catechol is the precursor for the final material. Oxidation and polymerization form the next stage of the proposed MELANIFY pathway.</p>
+              <div class="stage-tags">
+                <span>Oxidation &amp; polymerization</span>
+                <span>Material formation</span>
+              </div>
+              <a class="text-link" href="#our-solution">Explore this stage<span class="link-line"></span></a>
+            </div>
+          </div>
+          <div class="pathway-panel" id="pathway-panel-5" aria-label="Allomelanin">
+            <div class="stage-number" aria-hidden="true">06</div>
+            <div class="stage-copy">
+              <span class="eyebrow">A functional biomaterial</span>
+              <h3>Allomelanin</h3>
+              <p>The pathway aims to produce catechol-melanin, or allomelanin. Its potential as a UV-shielding material is a research direction that requires further material and safety validation.</p>
+              <div class="stage-tags">
+                <span>Catechol-melanin</span>
+                <span>Potential UV-shielding pigment</span>
+              </div>
+              <a class="text-link" href="#our-solution">Explore this stage<span class="link-line"></span></a>
+            </div>
+          </div>
+        </div>
       </div>
+        <div class="cascade-steps">
+          <section><span>01</span><div><h3>Starting Material: PET Plastic Waste</h3><p><strong>Input:</strong> post-consumer PET bottles and microplastics. Mechanical or thermal pre-treatment increases surface area and reduces crystallinity, preparing the polymer chains for biological cleavage. A persistent marine pollutant becomes an inexpensive, carbon-rich feedstock.</p></div></section>
+          <section><span>02</span><div><h3>Secreted Enzymatic Cleavage: HotPETase</h3><p><strong>Host:</strong> <i>Pichia pastoris</i>. Engineered cells secrete thermostable HotPETase into the culture medium. The enzyme hydrolyzes ester bonds in insoluble PET into soluble MHET, alongside minor fractions of TPA and ethylene glycol.</p></div></section>
+          <section><span>03</span><div><h3>Surface-Displayed Hydrolysis: MHETase</h3><p><strong>Host:</strong> <i>E. coli</i>. Surface-anchored MHETase cleaves MHET into terephthalic acid and ethylene glycol. Outer-membrane display avoids requiring MHET uptake into the cytoplasm and helps reduce intracellular metabolic burden.</p></div></section>
+          <section><span>04</span><div><h3>Intracellular Conversion: TPA → PCA</h3><p><strong>Tools:</strong> tphA1, tphA2, tphA3, and tphB in <i>E. coli</i>. The dioxygenase system oxygenates TPA into a dihydrodiol intermediate, and TphB converts that intermediate to protocatechuic acid, PCA. The current device has no TphC transporter; lysate or permeabilised cells provide substrate access.</p></div></section>
+          <section><span>05</span><div><h3>Decarboxylation to Precursor: PCA → Catechol</h3><p><strong>Tools:</strong> AroY, EcdB, and EcdD in <i>E. coli</i>. AroY catalyzes non-oxidative decarboxylation of PCA. EcdB supplies the prenylated flavin mononucleotide, prFMN, cofactor, and EcdD supports cofactor maturation and enzyme activity.</p></div></section>
+          <section><span>06</span><div><h3>Polymerization &amp; Final Yield: Catechol → Allomelanin</h3><p><strong>Reaction:</strong> cell-free oxidative biopolymerization. Open-air exposure, slightly basic pH, and trace CuSO₄ promote oxidation and polymerization of catechol into a nitrogen-free, cross-linked biopolymer matrix.</p></div></section>
+        </div>
+        <div class="article-callout"><h3>Ensuring a GMO-Free Final Product</h3><p>Our final material is intended to be isolated as a cell-free biopolymer. Separation, purification, and validation are essential to confirming that engineered organisms do not remain in the product. <a href="safety.html">Learn about our containment protocols →</a></p></div>
+        <h2 id="future-implications">Future Implications</h2><h3>Contributions to the Scientific Community</h3><ul><li><strong>Circular plastic upcycling:</strong> a synthetic biology pipeline connecting post-consumer PET with a high-value functional biopolymer.</li><li><strong>Dual-host engineering:</strong> a modular division of labor using <i>P. pastoris</i> for secretion and <i>E. coli</i> for membrane-bound and intracellular conversion.</li><li><strong>Enzymatic decarboxylation module:</strong> co-expression of AroY with EcdB and EcdD to explore conversion of pathway intermediates into catechol.</li></ul><h3>Strategic Avenues for Expansion</h3><ul><li><strong>Broadening plastic feedstocks:</strong> integrating additional degradation enzymes to process alternative polymer waste streams into aromatic precursors.</li><li><strong>Process scale-up:</strong> transitioning from batch bioconversion to optimized, scalable systems for cell-free allomelanin harvesting and production.</li></ul><p>MELANIFY represents a commitment to protecting both human health and ocean ecosystems. By turning marine plastic pollution into sustainable photoprotection, we aim to bridge synthetic biology with environmental protection, moving toward a future where everyday sun care works in harmony with fragile marine life.</p>
+        <h2 id="references">References</h2><ol class="reference-list"><li><a href="https://nems.nih.gov/sustain/Pages/PETWaterBottleImpact.aspx" target="_blank" rel="noopener noreferrer">National Institutes of Health Environmental Management System. Life cycle environmental impacts of PET plastic water bottles.</a></li>
+<li><a href="https://aquapet.com.tr/pet-bottle-waste-used-globally-in-a-year-quantity-and-impacts/" target="_blank" rel="noopener noreferrer">Aquapet Plastik Geri Dönüşüm. PET bottle waste used globally in a year: Quantity and impacts.</a></li>
+<li><a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener noreferrer">World Health Organization. (2022). Ultraviolet radiation.</a></li>
+<li><a href="https://ocean.si.edu/ecosystems/coral-reefs/truth-about-corals-and-sunscreen" target="_blank" rel="noopener noreferrer">Smithsonian Ocean. The truth about corals and sunscreen.</a></li>
+<li><a href="https://synapse.patsnap.com/article/what-are-the-side-effects-of-oxybenzone" target="_blank" rel="noopener noreferrer">Patsnap Synapse. What are the side effects of oxybenzone?</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10002160/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2023). Melanin biopolymers and photoprotection.</a></li>
+<li>World Bank. (2022). Plastic waste material flow analysis for Thailand: Summary report. Marine Plastics Series, East Asia and Pacific Region.</li>
+<li><a href="https://ozone.tmd.go.th/UV_index.htm" target="_blank" rel="noopener noreferrer">Thai Meteorological Department. UV index. Ozone and Radiation Center.</a></li>
+<li><a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation" target="_blank" rel="noopener noreferrer">World Health Organization. (2022). Ultraviolet radiation.</a></li>
+<li><a href="https://www.samitivejhospitals.com/article/detail/uv-index" target="_blank" rel="noopener noreferrer">Sirithanabadeekul, P. (2019). Thailand’s UV index rating and the risk of sunburn. Samitivej Hospital.</a></li>
+<li><a href="https://ocean.si.edu/ecosystems/coral-reefs/truth-about-corals-and-sunscreen" target="_blank" rel="noopener noreferrer">Smithsonian Ocean. The truth about corals and sunscreen.</a></li>
+<li><a href="https://synapse.patsnap.com/article/what-are-the-side-effects-of-oxybenzone" target="_blank" rel="noopener noreferrer">Patsnap Synapse. What are the side effects of oxybenzone?</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/29981751/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2018). Toxicological effects of organic UV filters on marine ecosystems.</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7648445/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2020). Occurrence, bioaccumulation, and environmental risks of sunscreen active ingredients.</a></li>
+<li><a href="https://portal.dnp.go.th/Content/nationalpark?contentId=25456" target="_blank" rel="noopener noreferrer">Department of National Parks, Wildlife and Plant Conservation. Notification on sunscreen chemical restrictions in national parks.</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10002160/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2023). Melanin biopolymers in pharmacology and medicine—Skin pigmentation disorders, implications for drug action, adverse effects and therapy.</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11172709/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2024). Melanin for photoprotection and hair coloration in the emerging era of nanocosmetics.</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12904162/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2025). Exploring allomelanin: A comparative analysis via natural product extraction and synthesis.</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9033651/" target="_blank" rel="noopener noreferrer">National Center for Biotechnology Information. (2022). Fungal melanin as a biocompatible broad-spectrum sunscreen with high antioxidant activity.</a></li>
+</ol><a class="next-chapter" id="chapter-next" href="engineering.html"><span><span class="small-label">CONTINUE EXPLORING</span><strong>Engineering</strong></span><span class="next-plus" aria-hidden="true">↗</span></a></article></div>
     </main>
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-          <p>Rethinking plastic.<br>Exploring what comes next.</p>
-        </div>
-        <div class="footer-links">
-          <div>
-            <span>THE SCIENCE</span>
-            <a href="description.html" aria-current="page">Our project</a>
-            <a href="engineering.html">Engineering</a>
-            <a href="results.html">Results</a>
-            <a href="protocols.html">Protocols</a>
-          </div>
-          <div>
-            <span>THE CONNECTIONS</span>
-            <a href="human-practices.html">Human practices</a>
-            <a href="education.html">Education</a>
-            <a href="entrepreneurship.html">Entrepreneurship</a>
-          </div>
-        </div>
+ <footer class="site-footer">
+    <div class="footer-top">
+    
+    <div><a class="brand" href="index.html" aria-label="MELANIFY home">
+    <img src="images/logo2.jpeg" alt="MELANIFY Logo" style="width: 80px; height: auto; object-fit: contain;"></a>
+        <p>Rethinking plastic.<br>Exploring what comes next.</p>
       </div>
-      <div class="footer-bottom">
-        <span>MELANIFY · XCL American School of Bangkok</span>
-        <span>A synthetic biology research project</span>
-        <a href="#top">Back to top</a>
-      </div>
-    </footer>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div><span>PROJECT</span><a href="description.html">Our project</a></div>
+        <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
+            href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
+            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+        <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
+            href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+        <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
+        project</span><a href="#top">Back to top ↑</a></div>
+  </footer>
     <dialog class="figure-dialog" aria-label="Enlarged research figure">
       <button class="dialog-close" aria-label="Close enlarged figure">Close <span aria-hidden="true">×</span></button>
       <img alt="">
-      <p>Original figure from the supplied research document</p>
+      <p>MELANIFY · Research figure</p>
     </dialog>
   </body>
 </html>

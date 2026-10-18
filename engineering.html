@@ -1,382 +1,1062 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#075473">
-    <meta name="description" content="MELANIFY explores a biological pathway from PET plastic waste to allomelanin. Discover our engineering, research and community work.">
-    <title>Engineering success | MELANIFY</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer=""></script>
-  </head>
-  <body data-page="engineering">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#075473" name="theme-color"/>
+  <meta content="MELANIFY explores a biological pathway from PET plastic waste to allomelanin. Discover our engineering, research and community work." name="description"/>
+  <title>
+   Engineering | MELANIFY
+  </title>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <script defer="" src="script.js"></script>
+  </script>
+  <link href="wetlab.css" rel="stylesheet"/>
+
+     <style>
+        .brand {
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+.brand-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+    </style>
+   <link rel="stylesheet" href="banner.css">
+</head>
+ <body data-page="engineering">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <!-- <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a> -->
+         <a class="brand" href="index.html" aria-label="MELANIFY home">
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
         <nav id="main-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
-          <details class="nav-group">
-            <summary>Project<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="description.html">Project description</a>
-              <a href="entrepreneurship.html">Entrepreneurship</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary class="current">Wet lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="engineering.html" aria-current="page">Engineering</a>
-              <a href="protocols.html">Protocols</a>
-              <a href="results.html">Results</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary>Beyond the lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="human-practices.html">Human practices</a>
-              <a href="education.html">Education</a>
-            </div>
-          </details>
+          <details class="nav-group"><summary>Project<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="description.html">Description: Problem Breakdown</a>
+          </div></details>
+          <details class="nav-group"><summary class="current">Wet Lab<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="engineering.html" aria-current="page">Engineering</a>
+            <a href="results.html">Results</a>
+            <a href="protocols.html">Protocols &amp; Notebook</a>
+            <a href="parts.html">Parts</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="safety.html">Safety</a>
+          </div></details>
+          <details class="nav-group"><summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="human-practices.html">Integrated Human Practices</a>
+            <a href="education.html">Education</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+          </div></details>
+          <details class="nav-group"><summary>Team<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
+            <a href="members.html">Members</a>
+            <a href="attributions.html">Attributions</a>
+          </div></details>
         </nav>
-        <a class="header-project" href="engineering.html">Explore the science<span class="tiny-orbit" aria-hidden="true"></span></a>
       </div>
       <div class="reading-progress" aria-hidden="true"></div>
     </header>
-    <main id="main">
-      <section class="chapter-hero" id="top">
-        <div class="wrap">
-          <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Engineering</div>
-          <div class="eyebrow">WET LAB / ENGINEERING</div>
-          <h1>Engineering<br>a new possibility.</h1>
-          <p>From protein design to biological upcycling. Follow the iterations that shape the MELANIFY pathway.</p>
-          <span class="chapter-number" aria-hidden="true">02</span>
+
+    <div class="page-banner" aria-hidden="true">
+    <img src="images/banner.jpeg" alt="" width="1024" height="589" decoding="async" fetchpriority="high">
+  </div>
+  <main id="main">
+   <section class="chapter-hero wetlab-hero" id="top">
+    <div class="wrap">
+     <div class="breadcrumb">
+      <a href="index.html">
+       Home
+      </a>
+      <span>
+       /
+      </span>
+      Engineering
+     </div>
+     <h1>
+      Engineering
+     </h1>
+     <p class="chapter-subtitle">
+      Engineering a new possibility
+     </p>
+     <p class="hero-footnote">
+      From protein design to pathway
+     </p>
+    </div>
+   </section>
+   <div class="article-layout wrap">
+    <aside class="article-sidebar">
+     <div class="toc-sticky">
+      <nav aria-label="Wet lab pages" class="wetlab-nav">
+       <span class="small-label">
+        WET LAB
+       </span>
+       <a aria-current="page" href="engineering.html">
+        Engineering
+       </a>
+       <a href="results.html">
+        Results
+       </a>
+       <a href="protocols.html">
+        Protocols &amp; Notebook
+       </a>
+       <a href="safety.html">
+        Safety
+       </a>
+      </nav>
+      <span class="small-label">
+       ON THIS PAGE
+      </span>
+      <nav aria-label="Chapter contents" class="toc">
+       <a class="toc-primary" href="#abstract">
+        Abstract
+       </a>
+       <a class="toc-primary" href="#hotpetase">
+        HotPETase
+       </a>
+       <a class="toc-secondary" href="#cycle-1">
+        Cycle 1
+       </a>
+       <a class="toc-secondary" href="#cycle-2">
+        Cycle 2
+       </a>
+       <a class="toc-secondary" href="#cycle-3">
+        Cycle 3
+       </a>
+       <a class="toc-primary" href="#inavn-mhetase">
+        InaVN–MHETase
+       </a>
+       <a class="toc-secondary" href="#cycle-1-2">
+        Cycle 1
+       </a>
+       <a class="toc-primary" href="#tpa-to-pca">
+        TPA to PCA
+       </a>
+       <a class="toc-secondary" href="#cycle-1-in-silico">
+        Cycle 1 (in silico)
+       </a>
+       <a class="toc-secondary" href="#cycle-2-2">
+        Cycle 2
+       </a>
+       <a class="toc-primary" href="#aroy-ecdb-ecdd">
+        AroY, EcdB &amp; EcdD
+       </a>
+       <a class="toc-secondary" href="#cycle-1-in-silico-2">
+        Cycle 1 (in silico)
+       </a>
+       <a class="toc-secondary" href="#cycle-2-3">
+        Cycle 2
+       </a>
+       <a class="toc-primary" href="#conclusion">
+        Conclusion
+       </a>
+       <a class="toc-primary" href="#references">
+        References
+       </a>
+      </nav>
+     </div>
+    </aside>
+    <article class="article-content" id="chapter-content">
+     <div class="engineering-intro">
+      <span class="small-label">
+       THE ENGINEERING CYCLE
+      </span>
+      <div class="dbtl-strip">
+       <span>
+        <b>
+         01
+        </b>
+        Design
+       </span>
+       <span>
+        <b>
+         02
+        </b>
+        Build
+       </span>
+       <span>
+        <b>
+         03
+        </b>
+        Test
+       </span>
+       <span>
+        <b>
+         04
+        </b>
+        Learn
+       </span>
+      </div>
+      <p>
+       Our development follows an iterative cycle, connecting molecular modeling with laboratory work across the PET-to-allomelanin pathway.
+      </p>
+      <button aria-expanded="true" class="cycle-toggle">
+       Collapse all cycles
+      </button>
+     </div>
+     <h2 class="" data-reveal="" id="abstract">
+      Abstract
+     </h2>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+     </p>
+     <h2 class="" data-reveal="" id="hotpetase">
+      HotPETase
+     </h2>
+     <details class="cycle-block" id="cycle-1" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 1
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design">
+        Design
+       </h4>
+       <p>
+        There are many ways in which PETase can be modified to increase its thermostability. N-linked glycosylation is one of the countless modifications that can do just that. Pichia pastoris is the perfect host for this because it can rapidly produce enzymes at high yields (&gt;20 g/L with optimized fermentation) while simultaneously glycosylating them through its endoplasmic reticulum post-translational modification machinery (Deng et al., 2023; Li et al., 2025).
+       </p>
+       <p>
+        We aimed to improve catalytic efficiency by choosing Pichia Pastoris as a host for PETase.
+       </p>
+       <h4 class="stage-heading stage-build" id="build">
+        Build
+       </h4>
+       <p>
+        Screened the wild-type PETase sequence (PDB: 6EQE) to predict potential glycosylation sites using highly accurate bioinformatics servers. N-linked glycosylation sites were identified using NetNGlyc - 1.0, while O-linked glycosylation sites were predicted utilizing NetOGlyc - 4.0.
+       </p>
+       <p>
+        Comparative Modeling: Prepared two distinct systems for a head-to-head comparison: the Wild-type PETase (Control) and the Glycosylated PETase.
+       </p>
+       <h4 class="stage-heading stage-test" id="test">
+        Test
+       </h4>
+       <p>
+        Environment Setup: Solvated both protein structures in a rectangular water box and neutralized the systems by adding 0.15 M NaCl ions.
+       </p>
+       <p>
+        Heat Stress Simulation: Strictly configured the simulation temperature to 343.15 K (70°C) across all parameter files to mimic a high-heat industrial plastic degradation environment.
+       </p>
+       <p>
+        Hardware &amp; Execution: Deployed GPU-accelerated OpenMM on a remote Linux server, utilizing tmux and automated Bash scripting for uninterrupted background processing.
+       </p>
+       <p>
+        Equilibration: Performed initial energy minimization and thermodynamic equilibration to relax the molecular structures and reach the target temperature and pressure.
+       </p>
+       <p>
+        Production Run: Executed a continuous 10-nanosecond (10 ns) production run, generating detailed .dcdstructural trajectories for both the control and the glycosylated systems.
+       </p>
+       <p>
+        Data Processing: Processed the trajectory files using Python, specifically leveraging the MDTraj, Pandas, and Matplotlib libraries.
+       </p>
+       <p>
+        RMSD (Root Mean Square Deviation): Calculated backbone RMSD to evaluate overall structural stability and identify unfolding events over the 10 ns timeframe.
+       </p>
+       <p>
+        RMSF (Root Mean Square Fluctuation): Computed C-alpha RMSF to pinpoint per-residue flexibility, demonstrating how the glycan shield physically restricts the movement of highly flexible loops.
+       </p>
+       <p>
+        SASA (Solvent Accessible Surface Area): Measured the protein's surface area to assess the degree of structural swelling, core compaction, and solvent exposure upon severe heat stress.
+       </p>
+       <h4 class="stage-heading stage-learn" id="learn">
+        Learn
+       </h4>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Backbone RMSD of wild-type and glycosylated PETase at 70°C." class="figure-open" data-alt="Backbone RMSD of wild-type and glycosylated PETase at 70°C." data-image="assets/client-wetlab-figure-44-1.webp" href="assets/client-wetlab-figure-44-1.webp" rel="noopener" target="_blank">
+         <img alt="Backbone RMSD of wild-type and glycosylated PETase at 70°C." height="1158" loading="lazy" src="assets/client-wetlab-figure-44-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 01
+         </span>
+         Backbone RMSD of wild-type and glycosylated PETase at 70°C.
+        </figcaption>
+       </figure>
+       <h3 class="" id="1-backbone-rmsd-reveals-enhanced-global-thermostability">
+        1. Backbone RMSD Reveals Enhanced Global Thermostability
+       </h3>
+       <p>
+        As shown in the RMSD analysis, the wild-type PETase (Control, 6EQE) maintained relative stability for the first 6 ns but exhibited a sharp, sudden spike in RMSD at approximately 7 ns (increasing from ~1.0 Å to ~1.7 Å). This abrupt deviation strongly indicates the onset of thermal unfolding and loss of native structure. In contrast, the glycosylated PETase demonstrated an initial adjustment phase (likely accommodating the bulky glycan structures) followed by a highly stable plateau for the remainder of the simulation. These results suggest that the introduction of N-linked glycans effectively prevents the rapid heat-induced structural degradation observed in the wild-type enzyme.
+       </p>
+       <h3 class="" id="2-c-alpha-rmsf-highlights-local-rigidification-by-glycan-shields">
+        2. C-alpha RMSF Highlights Local Rigidification by Glycan Shields
+       </h3>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Per-residue flexibility of wild-type and glycosylated PETase." class="figure-open" data-alt="Per-residue flexibility of wild-type and glycosylated PETase." data-image="assets/client-wetlab-figure-45-1.webp" href="assets/client-wetlab-figure-45-1.webp" rel="noopener" target="_blank">
+         <img alt="Per-residue flexibility of wild-type and glycosylated PETase." height="993" loading="lazy" src="assets/client-wetlab-figure-45-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 02
+         </span>
+         Per-residue flexibility of wild-type and glycosylated PETase.
+        </figcaption>
+       </figure>
+       <p>
+        The wild-type PETase displayed high degrees of flexibility, characterized by prominent fluctuation peaks at specific loop regions, most notably around residues 30-50 and 200-250. Remarkably, the glycosylated PETase exhibited a significant suppression of these fluctuations across the entire protein sequence. The local flexibility in the aforementioned highly mobile loops was markedly reduced. This damping effect indicates that the engineered glycan networks act as physical anchors, restricting excessive thermal motion and rigidifying the surface loops, which is a crucial mechanism for maintaining enzymatic stability at elevated temperatures.
+       </p>
+       <h3 class="" id="3-sasa-analysis-indicates-preservation-of-structural-core">
+        3. SASA Analysis Indicates Preservation of Structural Core
+       </h3>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Solvent-accessible surface area of PETase at 343 K." class="figure-open" data-alt="Solvent-accessible surface area of PETase at 343 K." data-image="assets/client-wetlab-figure-46-1.webp" href="assets/client-wetlab-figure-46-1.webp" rel="noopener" target="_blank">
+         <img alt="Solvent-accessible surface area of PETase at 343 K." height="1140" loading="lazy" src="assets/client-wetlab-figure-46-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 03
+         </span>
+         Solvent-accessible surface area of PETase at 343 K.
+        </figcaption>
+       </figure>
+       <p>
+        The wild-type PETase exhibited severe fluctuations in total SASA, culminating in a sharp, abnormal drop between 9.5 and 10 ns. This drastic reduction in surface area perfectly correlates with the unfolding event observed in the RMSD data, suggesting a structural collapse or abnormal hydrophobic core packing due to thermal denaturation. Conversely, the glycosylated PETase maintained a much more consistent and steady SASA profile throughout the 10 ns simulation. This consistency further confirms that the glycan shield successfully protects the structural core of the enzyme, preventing the fatal structural collapse that occurs in the unglycosylated wild-type under identical heat stress conditions.
+       </p>
+       <p class="research-transition">
+        ↓ Carry strategy to a stronger scaffold
+       </p>
+      </div>
+     </details>
+     <details class="cycle-block" id="cycle-2" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 2
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design-2">
+        Design
+       </h4>
+       <p>
+        Cycle 1 suggested that N-linked glycosylation could improve PETase stability at elevated temperatures. Rather than continuing to optimize the weaker wild-type scaffold, we transferred the strategy to HotPETase (PDB: 7QVH), a thermostable PETase scaffold, to determine whether glycosylation could further stabilize an already heat-resistant enzyme.
+       </p>
+       <h4 class="stage-heading stage-build" id="build-2">
+        Build
+       </h4>
+       <p>
+        Screened the HotPETase sequence (PDB: 7QVH) to predict potential glycosylation sites using highly accurate bioinformatics servers. N-linked glycosylation sites were identified using NetNGlyc - 1.0, while O-linked glycosylation sites were predicted utilizing NetOGlyc - 4.0.
+       </p>
+       <p>
+        Comparative Modeling: Prepared two distinct systems for a head-to-head comparison: the Wild-type HotPETase (Control) and the Glycosylated HotPETase.
+       </p>
+       <h4 class="stage-heading stage-test" id="test-2">
+        Test
+       </h4>
+       <p>
+        Instead of repeating the full Cycle 1 analysis, we focused on structural compatibility and active-site preservation:
+       </p>
+       <p>
+        ● Compared the recombinant HotPETase construct with the experimentally determined 7QVH structure. ● Mapped predicted glycosylation sites relative to the catalytic triad (Ser160, Asp206, His237). ● Simulated glycosylated and non-glycosylated HotPETase for 10 ns at 70°C. ● Evaluated global stability and local flexibility.
+       </p>
+       <h4 class="stage-heading stage-learn" id="learn-2">
+        Learn
+       </h4>
+       <p>
+        Structural Superposition &amp; Tag Influence: We modeled the recombinant construct (with the N-terminal extension and C-terminal tag)(cyan) and superimposed it with the wild-type HotPETase (PDB ID: 7QVH) (green). The alignment yielded an exceptionally low Global RMSD of 0.233 Å. As shown in the attached image, the core fold remains entirely undisrupted, and the terminal extensions are fully solvent-exposed, projecting away from the main structure.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Structural superposition of recombinant and reference HotPETase." class="figure-open" data-alt="Structural superposition of recombinant and reference HotPETase." data-image="assets/client-wetlab-figure-48-1.webp" href="assets/client-wetlab-figure-48-1.webp" rel="noopener" target="_blank">
+         <img alt="Structural superposition of recombinant and reference HotPETase." height="816" loading="lazy" src="assets/client-wetlab-figure-48-1.webp" width="1280"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 04
+         </span>
+         Structural superposition of recombinant and reference HotPETase.
+        </figcaption>
+       </figure>
+       <p>
+        N-Glycosylation Site Prediction &amp; Active Site Analysis: Based on our FASTA sequence numbering, we identified 5 predicted N-glycosylation sites at positions: 114, 138, 190, 264, and 277. We mapped these onto the 3D structure (see attached image highlighting the catalytic triad: Ser160, Asp206, His237 in red). We noted that positions N190 and N264 are in close structural proximity to the catalytic triad residues.
+       </p>
+       <p>
+        However, based on our previous 10ns Molecular Dynamics (MD) simulations comparing the unglycosylated and glycosylated forms, the addition of glycans at these sites did not induce steric hindrance in the active site pocket. Instead, the glycosylated model demonstrated significantly improved structural stability and lower RMSF values, suggesting these glycans act as stabilizing anchors suitable for high-temperature conditions.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Predicted glycosylation sites mapped around the HotPETase catalytic triad." class="figure-open" data-alt="Predicted glycosylation sites mapped around the HotPETase catalytic triad." data-image="assets/client-wetlab-figure-49-1.webp" href="assets/client-wetlab-figure-49-1.webp" rel="noopener" target="_blank">
+         <img alt="Predicted glycosylation sites mapped around the HotPETase catalytic triad." height="1134" loading="lazy" src="assets/client-wetlab-figure-49-1.webp" width="1680"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 05
+         </span>
+         Predicted glycosylation sites mapped around the HotPETase catalytic triad.
+        </figcaption>
+       </figure>
+       <p>
+        Overall, our results indicate that HotPETase structural stability at 70°C is significantly enhanced by N-linked glycosylation. Glycosylated Enzyme (Blue Line): Maintains a consistently low Backbone RMSD (~1.0–1.5 Å) across the entire 10 ns simulation, demonstrating strong structural stability at 343 K (70°C). Non-Glycosylated Enzyme (Red Line): Experiences a sharp increase in RMSD after ~2 ns, fluctuating high up to ~4.0 Å, which indicates significant structural degradation/unfolding at high temperature.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Backbone RMSD of glycosylated and non-glycosylated HotPETase at 70°C." class="figure-open" data-alt="Backbone RMSD of glycosylated and non-glycosylated HotPETase at 70°C." data-image="assets/client-wetlab-figure-50-1.webp" href="assets/client-wetlab-figure-50-1.webp" rel="noopener" target="_blank">
+         <img alt="Backbone RMSD of glycosylated and non-glycosylated HotPETase at 70°C." height="1168" loading="lazy" src="assets/client-wetlab-figure-50-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 06
+         </span>
+         Backbone RMSD of glycosylated and non-glycosylated HotPETase at 70°C.
+        </figcaption>
+       </figure>
+       <p class="research-transition">
+        ↓ Ready for Wetlab testing
+       </p>
+      </div>
+     </details>
+     <details class="cycle-block" id="cycle-3" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 3
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-design">
+         Design
+        </h4>
+        <p>
+         To enable extracellular production and glycosylation of HotPETase, the HotPETase coding sequence was codon-optimized for Pichia pastoris and designed with an N-terminal secretion signal.
+        </p>
+        <figure class="research-figure">
+         <a aria-label="Enlarge: HotPETase expression construct in pPIC9K." class="figure-open" data-alt="HotPETase expression construct in pPIC9K." data-image="assets/client-wetlab-figure-51-1.webp" href="assets/client-wetlab-figure-51-1.webp" rel="noopener" target="_blank">
+          <img alt="HotPETase expression construct in pPIC9K." height="1417" loading="lazy" src="assets/client-wetlab-figure-51-1.webp" width="1800"/>
+          <span class="figure-zoom">
+           View full size
+          </span>
+         </a>
+         <figcaption>
+          <span>
+           FIGURE 07
+          </span>
+          HotPETase expression construct in pPIC9K.
+         </figcaption>
+        </figure>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-build">
+         Build
+        </h4>
+        <p>
+         The codon-optimized HotPETase construct was first assembled into pPIC9K and transformed into E. coli DH5α for plasmid propagation. Candidate colonies were screened by colony PCR and agarose gel electrophoresis, with the expected 8,099 bp construct used as the basis for identifying positive clones. Following plasmid extraction, the construct was verified by gel electrophoresis and prepared for P. pastoris transformation.
+        </p>
+        <p>
+         The plasmid was subsequently linearized with SacI to facilitate genomic integration into P. pastoris. Initial attempts on linearizing the plasmid were largely unsuccessful. This required us to repeat digestion and gel-based purification multiple times. These iterations resulted in substantial plasmid loss, prompting us to return to freshly extracted plasmid. Complete linearization was eventually confirmed by agarose gel electrophoresis, after which the purified plasmid was concentrated and prepared for yeast transformation.
+        </p>
+        <p>
+         0.8% agarose gel of HotPETase-pPIC9K before and after SacI digestion. Lane 1, 1 kb DNA ladder. Lane 2, undigested plasmid. Lane 3, SacI-digested plasmid following phenol-chloroform extraction. Both samples resolve as a single discrete species above 8 kb, consistent with the 10,081 bp plasmid, with no smearing or low molecular weight laddering. The digested sample resolves as a single discrete band with no smearing below it and no detectable low molecular weight products, confirming that the plasmid survived both SacI digestion and phenol-chloroform cleanup intact. This matters for our application: degraded or sheared DNA transforms P. pastoris poorly, and partial degradation at the SacI site within the AOX1 region would compromise the single-crossover integration event we rely on. The absence of multiple bands in the digested lane is also consistent with SacI cutting at a single site, as predicted from the sequence of the construct, where SacI is unique. Because both the linear and supercoiled forms of a 10 kb plasmid migrate in the compressed region above 8 kb on a standard agarose gel, we did not use band position alone to quantify linearization. Digestion efficiency was instead measured directly at approximately 99%, yielding 16.8 µg of linear DNA at 1.68 µg/µL.
+        </p>
+        <p>
+         Successful integration was subsequently confirmed functionally, by recovery of His+ transformants on MD medium after electroporation into KM71, their survival under G418 selection, and colony PCR across the integration junction. Successful transformants were expanded in YPD medium before being transferred to BMGY for biomass generation and subsequently BMMY for methanol-induced protein expression.
+        </p>
+        <p>
+         SDS-PAGE was performed to assess HotPETase protein expression in the transformed P. pastoris cultures. The resulting protein bands were analyzed by comparing their apparent molecular weights against a protein molecular weight marker to identify bands corresponding to the expected size of HotPETase.
+        </p>
+        <div class="wetlab-photo-grid">
+         <figure class="research-figure">
+          <a aria-label="Enlarge: Agarose gel analysis of the HotPETase construct." class="figure-open" data-alt="Agarose gel analysis of the HotPETase construct." data-image="assets/client-wetlab-culture-1.webp" href="assets/client-wetlab-culture-1.webp" rel="noopener" target="_blank">
+           <img alt="Agarose gel analysis of the HotPETase construct." height="1440" loading="lazy" src="assets/client-wetlab-culture-1.webp" width="1092"/>
+           <span class="figure-zoom">
+            View full size
+           </span>
+          </a>
+          <figcaption>
+           <span>
+            FIGURE 08
+           </span>
+           Agarose gel analysis of the HotPETase construct.
+          </figcaption>
+         </figure>
+         <figure class="research-figure">
+          <a aria-label="Enlarge: Pichia pastoris transformants on selective medium." class="figure-open" data-alt="Pichia pastoris transformants on selective medium." data-image="assets/client-wetlab-culture-2.webp" href="assets/client-wetlab-culture-2.webp" rel="noopener" target="_blank">
+           <img alt="Pichia pastoris transformants on selective medium." height="738" loading="lazy" src="assets/client-wetlab-culture-2.webp" width="712"/>
+           <span class="figure-zoom">
+            View full size
+           </span>
+          </a>
+          <figcaption>
+           <span>
+            FIGURE 09
+           </span>
+           Pichia pastoris transformants on selective medium.
+          </figcaption>
+         </figure>
+         <figure class="research-figure">
+          <a aria-label="Enlarge: Colonies expanded after transformation and selection." class="figure-open" data-alt="Colonies expanded after transformation and selection." data-image="assets/client-wetlab-culture-3.webp" href="assets/client-wetlab-culture-3.webp" rel="noopener" target="_blank">
+           <img alt="Colonies expanded after transformation and selection." height="820" loading="lazy" src="assets/client-wetlab-culture-3.webp" width="936"/>
+           <span class="figure-zoom">
+            View full size
+           </span>
+          </a>
+          <figcaption>
+           <span>
+            FIGURE 10
+           </span>
+           Colonies expanded after transformation and selection.
+          </figcaption>
+         </figure>
         </div>
-      </section>
-      <div class="chapter-banner">
-        <img src="assets/ocean-palette.png" alt="" width="906" height="551">
-        <span>MELANIFY / ENGINEERING</span>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-test">
+         Test
+        </h4>
+        <p>
+         PET plastic assay and TPA analysis by HPLC
+        </p>
+        <p>
+         The washed sheet was cut into roughly 5 mm squares with scissors, then embrittled in liquid nitrogen before milling. Cryogenic embrittlement is necessary because PET is above its glass transition at room temperature and will deform under impact rather than fracturing, giving flattened flakes instead of powder. The chilled flakes were milled by cryogenic ball milling in a mixer mill, using a grinding jar containing a steel ball, with the flakes re-frozen between runs to keep them below their glass transition. The product was sieved and the fraction passing 500 µm retained, with the coarser retained fraction re-frozen and milled again. A final drying step at 50 °C for 1 h removed condensation acquired during the freezing steps. Reactions were carried out in 50 mM glycine-NaOH pH 9.2. Each contained 10 mg of blended PET and 30 µL of buffer-exchanged HotPETase taken from −80 °C storage, made up to a final volume of 1 mL. Reactions were assembled in screw-cap tubes with liners, with the thread sealed with parafilm to limit evaporation over the long incubation, and incubated at 65 °C with shaking at 1000 rpm for 24 h.
+        </p>
+        <p>
+         Two controls were run alongside each reaction. The first contained 10 mg of PET with 30 µL of glycine buffer in place of enzyme, controlling for abiotic hydrolysis of PET at 65 °C over 24 h. The second contained 30 µL of HotPETase with no PET, controlling for any aromatic signal contributed by the enzyme preparation itself. After incubation, reactions were centrifuged at 13,000 g for 2 min, and the supernatant was taken to a secondary reaction.
+        </p>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-learn">
+         Learn
+        </h4>
+        <h5>
+         Transformation failure and identification of salt carryover
+        </h5>
+        <p>
+         A second electroporation of P. pastoris KM71 with SacI-linearized HotPETase-pPIC9K yielded no viable transformants. The initial hypothesis attributed the failure to degradation of an expired reagent. This hypothesis was not supported on further testing, and a systematic review of the full workflow was therefore undertaken rather than of the electroporation step alone. The failure was traced to residual salt carried over from the preceding DNA cleanup, performed several steps upstream of the transformation. Elevated ionic strength in the sample increases conductivity and promotes arcing during pulse delivery, which is consistent with the observed loss of viability and transformation efficiency. The cleanup procedure was replaced with phenol-chloroform extraction, and each preparative step was verified independently before proceeding. Subsequent electroporation produced His+ colonies on MD medium, confirming that the original failure was attributable to sample composition rather than to reagent age.
+        </p>
+        <h5>
+         Substrate preparation and particle size reduction
+        </h5>
+        <p>
+         Enzymatic depolymerisation of PET is a surface-limited process, and reaction rate is therefore dependent on the available surface area of the substrate. Initial attempts to reduce post-consumer PET sheet to a fine particulate by mechanical blending were unsuccessful. PET has a glass transition temperature above ambient, so at room temperature the flakes underwent plastic deformation under the blade rather than brittle fracture, and no appreciable reduction in particle size was achieved. The protocol was revised to incorporate cryogenic embrittlement prior to milling. Material frozen in liquid nitrogen and subsequently processed by cryogenic ball milling fractured to a fine powder, which was sieved to retain the fraction passing 500 µm. Powder yield per milling cycle was low, which constrained the number of reactions that could be run, but the material obtained was suitable for assay.
+        </p>
+        <h5>
+         Reaction viscosity and substrate loading
+        </h5>
+        <p>
+         On acidification, the initial reaction mixture formed a gel-like phase rather than remaining free-flowing. This behaviour interfered with reproducible sampling and prevented reliable passage of the sample through the 0.22 µm filtration step required prior to HPLC analysis. Substrate loading was reduced in the subsequent run, which maintained the mixture in a tractable state and permitted downstream processing. The reduction in substrate mass is expected to lower absolute product yield, and this trade-off was accepted on the basis that a lower signal that can be quantified is preferable to a higher signal that cannot be recovered from the reaction vessel.
+        </p>
+        <p>
+         Quantification of reaction products required authentic standards for calibration and peak assignment. Terephthalic acid was available to us as a standard, whereas BHET and MHET were not, and neither could be obtained within the project timeline. MHET in particular is not widely available commercially and is typically prepared in-house by partial hydrolysis of BHET, which was itself unavailable to us. Without these standards we could not assign retention times to the mono-ester intermediates or construct calibration curves for them, and any quantification of MHET or BHET accumulation would therefore have been unsupported.
+        </p>
+        <p>
+         The analytical strategy was designed around this constraint. The two enzymatic steps were run sequentially, with HotPETase removed from the PET reaction by 10 kDa molecular weight cut-off filtration before the filtrate was transferred to the MHETase step. Because the filtrate contains the soluble products of PET depolymerisation but no PETase activity, any further conversion occurring in the second reaction is attributable to MHETase alone. The MHET generated in the first step is not measured directly. It is instead quantified through its hydrolysis product, terephthalic acid, which accumulates in the second reaction and for which calibration was possible. Terephthalic acid release across the MHETase step therefore serves as the readout for MHETase activity on authentic PET depolymerisation products, rather than on a synthetic substrate.
+        </p>
+        <p>
+         Because the filtrate already contains terephthalic acid released directly by HotPETase during the first reaction, the quantity of interest is the increase in terephthalic acid across the second step rather than its absolute concentration. The filtrate was therefore sampled at the point of transfer, before addition of display cells, to establish the baseline against which the four hour time point is compared.
+        </p>
+       </section>
       </div>
-      <div class="article-layout wrap">
-        <aside class="article-sidebar">
-          <div class="toc-sticky">
-            <span class="small-label">ON THIS PAGE</span>
-            <nav class="toc" aria-label="Chapter contents">
-              <a class="toc-primary" href="#abstract">Abstract</a>
-              <a class="toc-primary" href="#hotpetase">HotPETase</a>
-              <a class="toc-secondary" href="#cycle-1">Cycle 1</a>
-              <a class="toc-secondary" href="#cycle-2">Cycle 2</a>
-              <a class="toc-secondary" href="#cycle-3">Cycle 3</a>
-              <a class="toc-primary" href="#inavn-mhetase">InaVN–MHETase</a>
-              <a class="toc-secondary" href="#cycle-1-2">Cycle 1</a>
-              <a class="toc-primary" href="#tpa-to-pca">TPA to PCA</a>
-              <a class="toc-secondary" href="#cycle-1-in-silico">Cycle 1 (in silico)</a>
-              <a class="toc-secondary" href="#cycle-2-2">Cycle 2</a>
-              <a class="toc-primary" href="#aroy-ecdb-ecdd">AroY, EcdB &amp; EcdD</a>
-              <a class="toc-secondary" href="#cycle-1-in-silico-2">Cycle 1 (in silico)</a>
-              <a class="toc-secondary" href="#cycle-2-3">Cycle 2</a>
-              <a class="toc-primary" href="#conclusion">Conclusion</a>
-              <a class="toc-primary" href="#references">References</a>
-            </nav>
-            <div class="sidebar-note">
-              <span>02 / 07</span>
-              <p>Every iteration brings<br>a new perspective.</p>
-            </div>
-          </div>
-        </aside>
-        <article class="article-content" id="chapter-content">
-          <div class="engineering-intro">
-            <span class="small-label">THE ENGINEERING CYCLE</span>
-            <div class="dbtl-strip">
-              <span><b>01</b>Design</span>
-              <span><b>02</b>Build</span>
-              <span><b>03</b>Test</span>
-              <span><b>04</b>Learn</span>
-            </div>
-            <p>Our development follows an iterative cycle, connecting molecular modeling with laboratory work across the PET-to-allomelanin pathway.</p>
-            <button class="cycle-toggle" aria-expanded="true">Collapse all cycles</button>
-          </div>
-          <h2 id="abstract" class="" data-reveal="">Abstract</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-          <h2 id="hotpetase" class="" data-reveal="">HotPETase</h2>
-          <details class="cycle-block" id="cycle-1" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 1</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>There are many ways in which PETase can be modified to increase its thermostability. N-linked glycosylation is one of the countless modifications that can do just that. Pichia pastoris is the perfect host for this because it can rapidly produce enzymes at high yields (&gt;20 g/L with optimized fermentation) while simultaneously glycosylating them through its endoplasmic reticulum post-translational modification machinery (Deng et al., 2023; Li et al., 2025).</p>
-              <p>We aimed to improve catalytic efficiency by choosing Pichia Pastoris as a host for PETase.</p>
-              <h4 id="build" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>Screened the wild-type PETase sequence (PDB: 6EQE) to predict potential glycosylation sites using highly accurate bioinformatics servers. N-linked glycosylation sites were identified using NetNGlyc - 1.0, while O-linked glycosylation sites were predicted utilizing NetOGlyc - 4.0.</p>
-              <p>Comparative Modeling: Prepared two distinct systems for a head-to-head comparison: the Wild-type PETase (Control) and the Glycosylated PETase.</p>
-              <h4 id="test" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>Environment Setup: Solvated both protein structures in a rectangular water box and neutralized the systems by adding 0.15 M NaCl ions.</p>
-              <p>Heat Stress Simulation: Strictly configured the simulation temperature to 343.15 K (70°C) across all parameter files to mimic a high-heat industrial plastic degradation environment.</p>
-              <p>Hardware &amp; Execution: Deployed GPU-accelerated OpenMM on a remote Linux server, utilizing tmux and automated Bash scripting for uninterrupted background processing.</p>
-              <p>Equilibration: Performed initial energy minimization and thermodynamic equilibration to relax the molecular structures and reach the target temperature and pressure.</p>
-              <p>Production Run: Executed a continuous 10-nanosecond (10 ns) production run, generating detailed .dcdstructural trajectories for both the control and the glycosylated systems.</p>
-              <p>Data Processing: Processed the trajectory files using Python, specifically leveraging the MDTraj, Pandas, and Matplotlib libraries.</p>
-              <p>RMSD (Root Mean Square Deviation): Calculated backbone RMSD to evaluate overall structural stability and identify unfolding events over the 10 ns timeframe.</p>
-              <p>RMSF (Root Mean Square Fluctuation): Computed C-alpha RMSF to pinpoint per-residue flexibility, demonstrating how the glycan shield physically restricts the movement of highly flexible loops.</p>
-              <p>SASA (Solvent Accessible Surface Area): Measured the protein's surface area to assess the degree of structural swelling, core compaction, and solvent exposure upon severe heat stress.</p>
-              <h4 id="learn" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-14-8.webp" data-alt="Supplied Engineering figure, source page 14" aria-label="Enlarge figure from source page 14" href="assets/figure-14-8.webp" target="_blank" rel="noopener"><img src="assets/figure-14-8.webp" alt="Supplied Engineering figure from source page 14" width="1800" height="1158" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 01</span>From the supplied research document · p. 14</figcaption>
-              </figure>
-              <h3 id="1-backbone-rmsd-reveals-enhanced-global-thermostability" class="">1. Backbone RMSD Reveals Enhanced Global Thermostability</h3>
-              <p>As shown in the RMSD analysis, the wild-type PETase (Control, 6EQE) maintained relative stability for the first 6 ns but exhibited a sharp, sudden spike in RMSD at approximately 7 ns (increasing from ~1.0 Å to ~1.7 Å). This abrupt deviation strongly indicates the onset of thermal unfolding and loss of native structure. In contrast, the glycosylated PETase demonstrated an initial adjustment phase (likely accommodating the bulky glycan structures) followed by a highly stable plateau for the remainder of the simulation. These results suggest that the introduction of N-linked glycans effectively prevents the rapid heat-induced structural degradation observed in the wild-type enzyme.</p>
-              <h3 id="2-c-alpha-rmsf-highlights-local-rigidification-by-glycan-shields" class="">2. C-alpha RMSF Highlights Local Rigidification by Glycan Shields</h3>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-15-4.webp" data-alt="Supplied Engineering figure, source page 15" aria-label="Enlarge figure from source page 15" href="assets/figure-15-4.webp" target="_blank" rel="noopener"><img src="assets/figure-15-4.webp" alt="Supplied Engineering figure from source page 15" width="1800" height="993" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 02</span>From the supplied research document · p. 15</figcaption>
-              </figure>
-              <p>The wild-type PETase displayed high degrees of flexibility, characterized by prominent fluctuation peaks at specific loop regions, most notably around residues 30-50 and 200-250. Remarkably, the glycosylated PETase exhibited a significant suppression of these fluctuations across the entire protein sequence. The local flexibility in the aforementioned highly mobile loops was markedly reduced. This damping effect indicates that the engineered glycan networks act as physical anchors, restricting excessive thermal motion and rigidifying the surface loops, which is a crucial mechanism for maintaining enzymatic stability at elevated temperatures.</p>
-              <h3 id="3-sasa-analysis-indicates-preservation-of-structural-core" class="">3. SASA Analysis Indicates Preservation of Structural Core</h3>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-16-5.webp" data-alt="Supplied Engineering figure, source page 16" aria-label="Enlarge figure from source page 16" href="assets/figure-16-5.webp" target="_blank" rel="noopener"><img src="assets/figure-16-5.webp" alt="Supplied Engineering figure from source page 16" width="1800" height="1140" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 03</span>From the supplied research document · p. 16</figcaption>
-              </figure>
-              <p>The wild-type PETase exhibited severe fluctuations in total SASA, culminating in a sharp, abnormal drop between 9.5 and 10 ns. This drastic reduction in surface area perfectly correlates with the unfolding event observed in the RMSD data, suggesting a structural collapse or abnormal hydrophobic core packing due to thermal denaturation. Conversely, the glycosylated PETase maintained a much more consistent and steady SASA profile throughout the 10 ns simulation. This consistency further confirms that the glycan shield successfully protects the structural core of the enzyme, preventing the fatal structural collapse that occurs in the unglycosylated wild-type under identical heat stress conditions.</p>
-              <p class="research-transition">↓ Carry strategy to a stronger scaffold</p>
-            </div>
-          </details>
-          <details class="cycle-block" id="cycle-2" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 2</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-2" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>Cycle 1 suggested that N-linked glycosylation could improve PETase stability at elevated temperatures. Rather than continuing to optimize the weaker wild-type scaffold, we transferred the strategy to HotPETase (PDB: 7QVH), a thermostable PETase scaffold, to determine whether glycosylation could further stabilize an already heat-resistant enzyme.</p>
-              <h4 id="build-2" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>Screened the HotPETase sequence (PDB: 7QVH) to predict potential glycosylation sites using highly accurate bioinformatics servers. N-linked glycosylation sites were identified using NetNGlyc - 1.0, while O-linked glycosylation sites were predicted utilizing NetOGlyc - 4.0.</p>
-              <p>Comparative Modeling: Prepared two distinct systems for a head-to-head comparison: the Wild-type HotPETase (Control) and the Glycosylated HotPETase.</p>
-              <h4 id="test-2" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>Instead of repeating the full Cycle 1 analysis, we focused on structural compatibility and active-site preservation:</p>
-              <p>● Compared the recombinant HotPETase construct with the experimentally determined 7QVH structure. ● Mapped predicted glycosylation sites relative to the catalytic triad (Ser160, Asp206, His237). ● Simulated glycosylated and non-glycosylated HotPETase for 10 ns at 70°C. ● Evaluated global stability and local flexibility.</p>
-              <h4 id="learn-2" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Structural Superposition &amp; Tag Influence: We modeled the recombinant construct (with the N-terminal extension and C-terminal tag)(cyan) and superimposed it with the wild-type HotPETase (PDB ID: 7QVH) (green). The alignment yielded an exceptionally low Global RMSD of 0.233 Å. As shown in the attached image, the core fold remains entirely undisrupted, and the terminal extensions are fully solvent-exposed, projecting away from the main structure.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-18-2.webp" data-alt="Supplied Engineering figure, source page 18" aria-label="Enlarge figure from source page 18" href="assets/figure-18-2.webp" target="_blank" rel="noopener"><img src="assets/figure-18-2.webp" alt="Supplied Engineering figure from source page 18" width="1280" height="816" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 04</span>From the supplied research document · p. 18</figcaption>
-              </figure>
-              <p>N-Glycosylation Site Prediction &amp; Active Site Analysis: Based on our FASTA sequence numbering, we identified 5 predicted N-glycosylation sites at positions: 114, 138, 190, 264, and 277. We mapped these onto the 3D structure (see attached image highlighting the catalytic triad: Ser160, Asp206, His237 in red). We noted that positions N190 and N264 are in close structural proximity to the catalytic triad residues.</p>
-              <p>However, based on our previous 10ns Molecular Dynamics (MD) simulations comparing the unglycosylated and glycosylated forms, the addition of glycans at these sites did not induce steric hindrance in the active site pocket. Instead, the glycosylated model demonstrated significantly improved structural stability and lower RMSF values, suggesting these glycans act as stabilizing anchors suitable for high-temperature conditions.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-19-2.webp" data-alt="Supplied Engineering figure, source page 19" aria-label="Enlarge figure from source page 19" href="assets/figure-19-2.webp" target="_blank" rel="noopener"><img src="assets/figure-19-2.webp" alt="Supplied Engineering figure from source page 19" width="1680" height="1134" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 05</span>From the supplied research document · p. 19</figcaption>
-              </figure>
-              <p>Overall, our results indicate that HotPETase structural stability at 70°C is significantly enhanced by N-linked glycosylation. Glycosylated Enzyme (Blue Line): Maintains a consistently low Backbone RMSD (~1.0–1.5 Å) across the entire 10 ns simulation, demonstrating strong structural stability at 343 K (70°C). Non-Glycosylated Enzyme (Red Line): Experiences a sharp increase in RMSD after ~2 ns, fluctuating high up to ~4.0 Å, which indicates significant structural degradation/unfolding at high temperature.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-20-3.webp" data-alt="Supplied Engineering figure, source page 20" aria-label="Enlarge figure from source page 20" href="assets/figure-20-3.webp" target="_blank" rel="noopener"><img src="assets/figure-20-3.webp" alt="Supplied Engineering figure from source page 20" width="1800" height="1168" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 06</span>From the supplied research document · p. 20</figcaption>
-              </figure>
-              <p class="research-transition">↓ Ready for Wetlab testing</p>
-            </div>
-          </details>
-          <details class="cycle-block" id="cycle-3" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 3</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-3" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>To enable extracellular production and glycosylation of HotPETase, the HotPETase coding sequence was codon-optimized for Pichia pastoris and designed with an N-terminal secretion signal.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-21-3.webp" data-alt="Supplied Engineering figure, source page 21" aria-label="Enlarge figure from source page 21" href="assets/figure-21-3.webp" target="_blank" rel="noopener"><img src="assets/figure-21-3.webp" alt="Supplied Engineering figure from source page 21" width="1800" height="1417" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 07</span>From the supplied research document · p. 21</figcaption>
-              </figure>
-              <h4 id="build-3" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>The codon-optimized HotPETase construct was first assembled into pPIC9K and transformed into E. coli DH5α for plasmid propagation. Candidate colonies were screened by colony PCR and agarose gel electrophoresis, with the expected 8,099 bp construct used as the basis for identifying positive clones. Following plasmid extraction, the construct was verified by gel electrophoresis and prepared for P. pastoris transformation.</p>
-              <p>The plasmid was subsequently linearized with SacI to facilitate genomic integration into P. pastoris. Initial attempts on linearizing the plasmid were largely unsuccessful. This required us to repeat digestion and gel-based purification multiple times. These iterations resulted in substantial plasmid loss, prompting us to return to freshly extracted plasmid. Complete linearization was eventually confirmed by agarose gel electrophoresis, after which the purified plasmid was concentrated and prepared for yeast transformation.</p>
-              <p>The linearized HotPETase construct was added into P. pastoris via electroporation. Then we selected the transformants on a His4 Plate, and colonies were transferred through G418 selection and screening steps to obtain candidate recombinant yeast strains. Successful transformants were expanded in YPD medium before being transferred to BMGY for biomass generation and subsequently BMMY for methanol-induced protein expression.</p>
-              <h4 id="test-3" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>PET plastic assay at 70 °C, TPA by HPLC ± ™</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-22-3.webp" data-alt="Supplied Engineering figure, source page 22" aria-label="Enlarge figure from source page 22" href="assets/figure-22-3.webp" target="_blank" rel="noopener"><img src="assets/figure-22-3.webp" alt="Supplied Engineering figure from source page 22" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 08</span>From the supplied research document · p. 22</figcaption>
-              </figure>
-              <h4 id="learn-3" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Has thermostability improved? (vs. non-glyco control) — still Planned/pending</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-23-5.webp" data-alt="Supplied Engineering figure, source page 23" aria-label="Enlarge figure from source page 23" href="assets/figure-23-5.webp" target="_blank" rel="noopener"><img src="assets/figure-23-5.webp" alt="Supplied Engineering figure from source page 23" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 09</span>From the supplied research document · p. 23</figcaption>
-              </figure>
-            </div>
-          </details>
-          <h2 id="inavn-mhetase" class="" data-reveal="">InaVN–MHETase</h2>
-          <details class="cycle-block" id="cycle-1-2" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 1</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-4" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>InaVN–MHETase surface-display construct</p>
-              <p>Fuse MHETase to InaVN anchor → display on E. coli outer membrane. Whole-cell catalyst, no purification. Pairs with HotPETase to complete PET → TPA.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-24-3.webp" data-alt="Supplied Engineering figure, source page 24" aria-label="Enlarge figure from source page 24" href="assets/figure-24-3.webp" target="_blank" rel="noopener"><img src="assets/figure-24-3.webp" alt="Supplied Engineering figure from source page 24" width="1800" height="1072" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 10</span>From the supplied research document · p. 24</figcaption>
-              </figure>
-              <h4 id="build-4" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>Clone + transform + induce display inaVN–mhetase fusion gene in expression vector → transform E. coli → induce → anchor displays MHETase on surface.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-25-3.webp" data-alt="Supplied Engineering figure, source page 25" aria-label="Enlarge figure from source page 25" href="assets/figure-25-3.webp" target="_blank" rel="noopener"><img src="assets/figure-25-3.webp" alt="Supplied Engineering figure from source page 25" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 11</span>From the supplied research document · p. 25</figcaption>
-              </figure>
-              <h4 id="test-4" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>Whole-cell MHET → TPA assay Display cells (OD600 5) + MHET-containing liquid, 30 °C, 4 h → TPA by RP-HPLC (C18, 240 nm). Controls: empty-vector cells + no-cell blank (your Tube A/B/C design). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla.</p>
-              <p>Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-26-3.webp" data-alt="Supplied Engineering figure, source page 26" aria-label="Enlarge figure from source page 26" href="assets/figure-26-3.webp" target="_blank" rel="noopener"><img src="assets/figure-26-3.webp" alt="Supplied Engineering figure from source page 26" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 12</span>From the supplied research document · p. 26</figcaption>
-              </figure>
-              <h4 id="learn-4" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>MHETase displayed and active? TPA produced above empty-vector baseline = functional surface display confirmed. → feeds next design.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at.</p>
-              <p>Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-27-5.webp" data-alt="Supplied Engineering figure, source page 27" aria-label="Enlarge figure from source page 27" href="assets/figure-27-5.webp" target="_blank" rel="noopener"><img src="assets/figure-27-5.webp" alt="Supplied Engineering figure from source page 27" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 13</span>From the supplied research document · p. 27</figcaption>
-              </figure>
-            </div>
-          </details>
-          <h2 id="tpa-to-pca" class="" data-reveal="">TPA to PCA</h2>
-          <details class="cycle-block" id="cycle-1-in-silico" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 1 (in silico)</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-5" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>tph operon in pETDuet, 4 subunits</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at.</p>
-              <p>Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-28-3.webp" data-alt="Supplied Engineering figure, source page 28" aria-label="Enlarge figure from source page 28" href="assets/figure-28-3.webp" target="_blank" rel="noopener"><img src="assets/figure-28-3.webp" alt="Supplied Engineering figure from source page 28" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 14</span>From the supplied research document · p. 28</figcaption>
-              </figure>
-              <h4 id="build-5" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>AlphaFold / AF-multimer models of subunits + dioxygenase complex</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-29-2.webp" data-alt="Supplied Engineering figure, source page 29" aria-label="Enlarge figure from source page 29" href="assets/figure-29-2.webp" target="_blank" rel="noopener"><img src="assets/figure-29-2.webp" alt="Supplied Engineering figure from source page 29" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 15</span>From the supplied research document · p. 29</figcaption>
-              </figure>
-              <h4 id="test-5" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>Structure QC — folds, Rieske + mononuclear Fe site geometry, A2–A3 interface, complex assembly plausible</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-30-2.webp" data-alt="Supplied Engineering figure, source page 30" aria-label="Enlarge figure from source page 30" href="assets/figure-30-2.webp" target="_blank" rel="noopener"><img src="assets/figure-30-2.webp" alt="Supplied Engineering figure from source page 30" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 16</span>From the supplied research document · p. 30</figcaption>
-              </figure>
-              <h4 id="learn-5" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Subunits model well, complex assembles</p>
-              <p class="research-transition">↓ Ready for Wetlab testing</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-31-3.webp" data-alt="Supplied Engineering figure, source page 31" aria-label="Enlarge figure from source page 31" href="assets/figure-31-3.webp" target="_blank" rel="noopener"><img src="assets/figure-31-3.webp" alt="Supplied Engineering figure from source page 31" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 17</span>From the supplied research document · p. 31</figcaption>
-              </figure>
-            </div>
-          </details>
-          <details class="cycle-block" id="cycle-2-2" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 2</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-6" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>tph operon in pETDuet for TPA→PCA Co-express 4-gene system: 3-component dioxygenase (A1 reductase + A2 oxygenase-α + A3 β) and TphB dehydrogenase. Converts TPA → PCA downstream of MHETase.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-32-2.webp" data-alt="Supplied Engineering figure, source page 32" aria-label="Enlarge figure from source page 32" href="assets/figure-32-2.webp" target="_blank" rel="noopener"><img src="assets/figure-32-2.webp" alt="Supplied Engineering figure from source page 32" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 18</span>From the supplied research document · p. 32</figcaption>
-              </figure>
-              <h4 id="build-6" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>Clone into pETDuet dual MCS, transform BL21 tphA1A2A3 in MCS1, tphB in MCS2 (or native operon order). Transform E. coli, IPTG induce.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-33-2.webp" data-alt="Supplied Engineering figure, source page 33" aria-label="Enlarge figure from source page 33" href="assets/figure-33-2.webp" target="_blank" rel="noopener"><img src="assets/figure-33-2.webp" alt="Supplied Engineering figure from source page 33" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 19</span>From the supplied research document · p. 33</figcaption>
-              </figure>
-              <h4 id="test-6" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>TPA→PCA conversion assay Feed TPA to whole cells, 30 °C → track TPA loss + PCA gain by HPLC (PCA UV ~250/290 nm) or LC-MS. Controls: empty vector + no-substrate.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-34-2.webp" data-alt="Supplied Engineering figure, source page 34" aria-label="Enlarge figure from source page 34" href="assets/figure-34-2.webp" target="_blank" rel="noopener"><img src="assets/figure-34-2.webp" alt="Supplied Engineering figure from source page 34" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 20</span>From the supplied research document · p. 34</figcaption>
-              </figure>
-              <h4 id="learn-6" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Functional TPA→PCA? PCA produced + TPA consumed vs. control = operon active, dioxygenase assembled.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-              <figure class="research-figure" data-reveal="">
-                <a class="figure-open" data-image="assets/figure-35-3.webp" data-alt="Supplied Engineering figure, source page 35" aria-label="Enlarge figure from source page 35" href="assets/figure-35-3.webp" target="_blank" rel="noopener"><img src="assets/figure-35-3.webp" alt="Supplied Engineering figure from source page 35" width="1800" height="1009" loading="lazy"><span class="figure-zoom">View full size</span></a>
-                <figcaption><span>FIGURE 21</span>From the supplied research document · p. 35</figcaption>
-              </figure>
-            </div>
-          </details>
-          <h2 id="aroy-ecdb-ecdd" class="" data-reveal="">AroY, EcdB &amp; EcdD</h2>
-          <details class="cycle-block" id="cycle-1-in-silico-2" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 1 (in silico)</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-7" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>tph operon in pETDuet, 4 subunits</p>
-              <h4 id="build-7" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>AlphaFold / AF-multimer models of subunits + dioxygenase complex</p>
-              <h4 id="test-7" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>Structure QC — folds, Rieske + mononuclear Fe site geometry, A2–A3 interface, complex assembly plausible</p>
-              <h4 id="learn-7" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Subunits model well, complex assembles</p>
-              <p class="research-transition">↓ Ready for Wetlab testing</p>
-            </div>
-          </details>
-          <details class="cycle-block" id="cycle-2-3" open="">
-            <summary><span class="cycle-icon" aria-hidden="true">↻</span><span>Cycle 2</span><span class="cycle-summary-label">DESIGN / BUILD / TEST / LEARN</span><span class="chevron"></span></summary>
-            <div class="cycle-content">
-              <h4 id="design-8" class="stage-heading stage-design"><span aria-hidden="true">01</span>Design</h4>
-              <p>tph operon in pETDuet for TPA→PCA Co-express 4-gene system: 3-component dioxygenase (A1 reductase + A2 oxygenase-α + A3 β) and TphB dehydrogenase. Converts TPA → PCA downstream of MHETase.</p>
-              <h4 id="build-8" class="stage-heading stage-build"><span aria-hidden="true">02</span>Build</h4>
-              <p>Clone into pETDuet dual MCS, transform BL21 tphA1A2A3 in MCS1, tphB in MCS2 (or native operon order). Transform E. coli, IPTG induce.</p>
-              <h4 id="test-8" class="stage-heading stage-test"><span aria-hidden="true">03</span>Test</h4>
-              <p>TPA→PCA conversion assay Feed TPA to whole cells, 30 °C → track TPA loss + PCA gain by HPLC (PCA UV ~250/290 nm) or LC-MS. Controls: empty vector + no-substrate.</p>
-              <h4 id="learn-8" class="stage-heading stage-learn"><span aria-hidden="true">04</span>Learn</h4>
-              <p>Functional TPA→PCA? PCA produced + TPA consumed vs. control = operon active, dioxygenase assembled.</p>
-            </div>
-          </details>
-          <h2 id="conclusion" class="" data-reveal="">Conclusion</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus</p>
-          <p>faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-          <h2 id="references" class="" data-reveal="">References</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus</p>
-          <p>faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.</p>
-          <a class="next-chapter" id="chapter-next" href="protocols.html" data-reveal=""><span><span class="small-label">CONTINUE EXPLORING</span><strong>Protocols</strong></span><span class="next-plus" aria-hidden="true">+</span></a>
-        </article>
+     </details>
+     <h2 class="" data-reveal="" id="inavn-mhetase">
+      InaVN–MHETase
+     </h2>
+     <details class="cycle-block" id="cycle-1-2" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 1
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-design">
+         Design
+        </h4>
+        <p>
+         MHETase is the second enzyme in the Ideonella sakaiensis PET degradation pathway, and in a conventional setup it would need to be expressed, lysed out, and purified before use. Surface display removes that requirement: if the enzyme can be anchored on the outer membrane with its active site facing the medium, the induced cells themselves become the catalyst, and they can be pelleted, washed, and reused. We selected the N-terminal domain of the Pseudomonas syringae ice nucleation protein (InaV-N) as the anchor, since it is well characterised for displaying large passenger proteins and tolerates fusions that would overwhelm smaller autotransporter systems. MHETase at 585 residues is a substantial passenger, which made anchor capacity the primary design criterion. The fusion was assembled as InaV-N, a (GGGGS)₃ flexible linker, mature MHETase with its native signal peptide removed, and a C-terminal His₆ tag, giving an 810 residue protein of 60.5% GC at the nucleotide level under T7lac control. The linker length was chosen to give the enzyme rotational freedom away from the membrane surface, so that the active site is not sterically occluded by the anchor or the lipopolysaccharide layer. We validated the design computationally before committing to synthesis: AlphaFold3 returned a pTM of 0.73 for the fusion, with both domains folding independently and the linker remaining extended, and TMHMM predicted no spurious transmembrane segments within the passenger that might cause it to lodge in the membrane rather than project from it.
+        </p>
+        <figure class="research-figure">
+         <a aria-label="Enlarge: InaV-N–MHETase fusion design and predicted structure." class="figure-open" data-alt="InaV-N–MHETase fusion design and predicted structure." data-image="assets/client-wetlab-figure-57-1.webp" href="assets/client-wetlab-figure-57-1.webp" rel="noopener" target="_blank">
+          <img alt="InaV-N–MHETase fusion design and predicted structure." height="1072" loading="lazy" src="assets/client-wetlab-figure-57-1.webp" width="1800"/>
+          <span class="figure-zoom">
+           View full size
+          </span>
+         </a>
+         <figcaption>
+          <span>
+           FIGURE 11
+          </span>
+          InaV-N–MHETase fusion design and predicted structure.
+         </figcaption>
+        </figure>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-build">
+         Build
+        </h4>
+        <p>
+         The construct was codon-optimised for E. coli and ordered as a synthetic gene. Sequence verification before ordering caught three errors that would each have cost us a synthesis round. The native lipoprotein signal peptide carried on the InaV-N reference sequence was removed, since retaining it alongside the vector’s own expression context risked mistargeting the fusion to the periplasm rather than the outer membrane. A duplicated ATG at the NdeI cloning junction was corrected, which would otherwise have added a redundant initiator codon. A second His tag, arising from a missing stop codon that read the fusion through into the vector’s own tag, was resolved so that the protein terminates after a single His₆. We confirmed that our InaV-N sequence was 100% identical to the ENA AJ001086 reference at both the DNA and protein level, so that any display failure could not be attributed to anchor sequence drift. The verified construct was transformed into E. coli BL21(DE3), and expression was induced with IPTG at reduced temperature to favour correct folding and membrane insertion over inclusion body formation.
+        </p>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-test">
+         Test
+        </h4>
+        <p>
+         Confirm surface localisation Membrane fractionation + anti-His detection. Whole-cell against lysate accessibility.
+        </p>
+        <p>
+         Before asking whether the enzyme was active, we asked whether it was where the design said it should be. Expression alone is not display: a fusion can be produced at high level and still accumulate in inclusion bodies, lodge in the inner membrane, or remain trapped in the periplasm, and in each of those cases the protein is present but inaccessible to external substrate. Induced cells were separated into soluble and membrane fractions, and the fusion was detected through its C-terminal His₆ tag at its predicted mass of approximately 85 kDa. The accessibility test was the more informative one: washed whole cells were compared directly against sonicated lysate prepared from the same culture, on the basis that a correctly displayed enzyme should be available to substrate without lysis, whereas an internally retained one would show activity only once the cells were broken open.
+        </p>
+       </section>
+       <section class="dbtl-stage">
+        <h4 class="stage-heading stage-learn">
+         Learn
+        </h4>
+        <p>
+         MHETase displayed and active? TPA produced above empty-vector baseline = functional surface display confirmed. → feeds next design.
+        </p>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+        </p>
+       </section>
       </div>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-          <p>Rethinking plastic.<br>Exploring what comes next.</p>
-        </div>
-        <div class="footer-links">
-          <div>
-            <span>THE SCIENCE</span>
-            <a href="description.html">Our project</a>
-            <a href="engineering.html" aria-current="page">Engineering</a>
-            <a href="results.html">Results</a>
-            <a href="protocols.html">Protocols</a>
-          </div>
-          <div>
-            <span>THE CONNECTIONS</span>
-            <a href="human-practices.html">Human practices</a>
-            <a href="education.html">Education</a>
-            <a href="entrepreneurship.html">Entrepreneurship</a>
-          </div>
-        </div>
+     </details>
+     <h2 class="" data-reveal="" id="tpa-to-pca">
+      TPA to PCA
+     </h2>
+     <details class="cycle-block" id="cycle-1-in-silico" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 1 (in silico)
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design-5">
+        Design
+       </h4>
+       <p>
+        tph operon in pETDuet, 4 subunits
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at.
+       </p>
+       <p>
+        Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 12
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-build" id="build-5">
+        Build
+       </h4>
+       <p>
+        AlphaFold / AF-multimer models of subunits + dioxygenase complex
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 13
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-test" id="test-5">
+        Test
+       </h4>
+       <p>
+        Structure QC — folds, Rieske + mononuclear Fe site geometry, A2–A3 interface, complex assembly plausible
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 14
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-learn" id="learn-5">
+        Learn
+       </h4>
+       <p>
+        Subunits model well, complex assembles
+       </p>
+       <p class="research-transition">
+        ↓ Ready for Wetlab testing
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 15
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
       </div>
-      <div class="footer-bottom">
-        <span>MELANIFY · XCL American School of Bangkok</span>
-        <span>A synthetic biology research project</span>
-        <a href="#top">Back to top</a>
+     </details>
+     <details class="cycle-block" id="cycle-2-2" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 2
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design-6">
+        Design
+       </h4>
+       <p>
+        tph operon in pETDuet for TPA→PCA Co-express 4-gene system: 3-component dioxygenase (A1 reductase + A2 oxygenase-α + A3 β) and TphB dehydrogenase. Converts TPA → PCA downstream of MHETase.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 16
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-build" id="build-6">
+        Build
+       </h4>
+       <p>
+        Clone into pETDuet dual MCS, transform BL21 tphA1A2A3 in MCS1, tphB in MCS2 (or native operon order). Transform E. coli, IPTG induce.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 17
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-test" id="test-6">
+        Test
+       </h4>
+       <p>
+        TPA→PCA conversion assay Feed TPA to whole cells, 30 °C → track TPA loss + PCA gain by HPLC (PCA UV ~250/290 nm) or LC-MS. Controls: empty vector + no-substrate.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 18
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
+       <h4 class="stage-heading stage-learn" id="learn-6">
+        Learn
+       </h4>
+       <p>
+        Functional TPA→PCA? PCA produced + TPA consumed vs. control = operon active, dioxygenase assembled.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+       </p>
+       <figure class="research-figure">
+        <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+         <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+         <span class="figure-zoom">
+          View full size
+         </span>
+        </a>
+        <figcaption>
+         <span>
+          FIGURE 19
+         </span>
+         Pathway illustration.
+        </figcaption>
+       </figure>
       </div>
-    </footer>
-    <dialog class="figure-dialog" aria-label="Enlarged research figure">
-      <button class="dialog-close" aria-label="Close enlarged figure">Close <span aria-hidden="true">×</span></button>
-      <img alt="">
-      <p>Original figure from the supplied research document</p>
-    </dialog>
-  </body>
+     </details>
+     <h2 class="" data-reveal="" id="aroy-ecdb-ecdd">
+      AroY, EcdB &amp; EcdD
+     </h2>
+     <figure class="research-figure">
+      <a aria-label="Enlarge: Pathway illustration." class="figure-open" data-alt="Pathway illustration." data-image="assets/client-wetlab-figure-59-1.webp" href="assets/client-wetlab-figure-59-1.webp" rel="noopener" target="_blank">
+       <img alt="Pathway illustration." height="1009" loading="lazy" src="assets/client-wetlab-figure-59-1.webp" width="1800"/>
+       <span class="figure-zoom">
+        View full size
+       </span>
+      </a>
+      <figcaption>
+       <span>
+        FIGURE 20
+       </span>
+       Pathway illustration.
+      </figcaption>
+     </figure>
+     <details class="cycle-block" id="cycle-1-in-silico-2" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 1 (in silico)
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design-7">
+        Design
+       </h4>
+       <p>
+        tph operon in pETDuet, 4 subunits
+       </p>
+       <h4 class="stage-heading stage-build" id="build-7">
+        Build
+       </h4>
+       <p>
+        AlphaFold / AF-multimer models of subunits + dioxygenase complex
+       </p>
+       <h4 class="stage-heading stage-test" id="test-7">
+        Test
+       </h4>
+       <p>
+        Structure QC — folds, Rieske + mononuclear Fe site geometry, A2–A3 interface, complex assembly plausible
+       </p>
+       <h4 class="stage-heading stage-learn" id="learn-7">
+        Learn
+       </h4>
+       <p>
+        Subunits model well, complex assembles
+       </p>
+       <p class="research-transition">
+        ↓ Ready for Wetlab testing
+       </p>
+      </div>
+     </details>
+     <details class="cycle-block" id="cycle-2-3" open="">
+      <summary>
+       <span aria-hidden="true" class="cycle-icon">
+        ↻
+       </span>
+       <span>
+        Cycle 2
+       </span>
+       <span class="cycle-summary-label">
+        DESIGN / BUILD / TEST / LEARN
+       </span>
+       <span class="chevron">
+       </span>
+      </summary>
+      <div class="cycle-content">
+       <h4 class="stage-heading stage-design" id="design-8">
+        Design
+       </h4>
+       <p>
+        tph operon in pETDuet for TPA→PCA Co-express 4-gene system: 3-component dioxygenase (A1 reductase + A2 oxygenase-α + A3 β) and TphB dehydrogenase. Converts TPA → PCA downstream of MHETase.
+       </p>
+       <h4 class="stage-heading stage-build" id="build-8">
+        Build
+       </h4>
+       <p>
+        Clone into pETDuet dual MCS, transform BL21 tphA1A2A3 in MCS1, tphB in MCS2 (or native operon order). Transform E. coli, IPTG induce.
+       </p>
+       <h4 class="stage-heading stage-test" id="test-8">
+        Test
+       </h4>
+       <p>
+        TPA→PCA conversion assay Feed TPA to whole cells, 30 °C → track TPA loss + PCA gain by HPLC (PCA UV ~250/290 nm) or LC-MS. Controls: empty vector + no-substrate.
+       </p>
+       <h4 class="stage-heading stage-learn" id="learn-8">
+        Learn
+       </h4>
+       <p>
+        Functional TPA→PCA? PCA produced + TPA consumed vs. control = operon active, dioxygenase assembled.
+       </p>
+      </div>
+     </details>
+     <h2 class="" data-reveal="" id="conclusion">
+      Conclusion
+     </h2>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus
+     </p>
+     <p>
+      faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+     </p>
+     <h2 class="" data-reveal="" id="references">
+      References
+     </h2>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus
+     </p>
+     <p>
+      faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et tortor ac neque eleifend molestie eget nec ante. Suspendisse potenti. Phasellus porttitor elit a urna finibus bibendum. Vivamus volutpat rhoncus erat at pulvinar. Aliquam dui neque, dapibus in feugiat et, ultricies non lectus. Etiam sit amet sodales nulla. Praesent condimentum interdum tortor, sed lobortis neque imperdiet non. Etiam blandit fringilla dolor pretium rutrum. In at erat sollicitudin turpis accumsan pretium eu sed eros. Curabitur condimentum vitae mi vel mollis. Curabitur vel lorem purus. Cras accumsan laoreet tellus, ac ullamcorper dolor consectetur at. Vivamus faucibus odio sem, ut faucibus ligula volutpat vel. Vestibulum faucibus mauris vitae nulla aliquet lobortis.
+     </p>
+     <a class="next-chapter" data-reveal="" href="protocols.html" id="chapter-next">
+      <span>
+       <span class="small-label">
+        CONTINUE EXPLORING
+       </span>
+       <strong>
+        Protocols &amp; Notebook
+       </strong>
+      </span>
+      <span aria-hidden="true" class="next-plus">
+       +
+      </span>
+     </a>
+    </article>
+   </div>
+  </main>
+ <footer class="site-footer">
+    <div class="footer-top">
+    
+    <div><a class="brand" href="index.html" aria-label="MELANIFY home">
+    <img src="images/logo2.jpeg" alt="MELANIFY Logo" style="width: 80px; height: auto; object-fit: contain;"></a>
+        <p>Rethinking plastic.<br>Exploring what comes next.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div><span>PROJECT</span><a href="description.html">Our project</a></div>
+        <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
+            href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
+            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+        <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
+            href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+        <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
+        project</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  <dialog aria-label="Enlarged research figure" class="figure-dialog">
+   <button aria-label="Close enlarged figure" class="dialog-close">
+    Close
+    <span aria-hidden="true">
+     ×
+    </span>
+   </button>
+   <img alt=""/>
+   <p>
+    MELANIFY · Research figure
+   </p>
+  </dialog>
+ </body>
 </html>

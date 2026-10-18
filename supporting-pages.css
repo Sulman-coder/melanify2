@@ -1,0 +1,74 @@
+/* Styles for the parts, implementation, safety, and team pages. */
+.support-hero { background: linear-gradient(115deg, #eef6fb 0%, #e1eef7 100%); }
+.support-hero .eyebrow { font-size: 1rem; letter-spacing: .07em; }
+.support-hero > .wrap { padding-bottom: 64px; }
+.support-hero h1 { max-width: 1000px; }
+.support-divider { min-height: 62px; display: flex; align-items: center; background: #d4e8f5; border-top: 1px solid #c2dce9; border-bottom: 1px solid #c2dce9; }
+.support-divider span { width: 100%; max-width: 1280px; margin: auto; padding: 20px 48px; color: #426a7f; font-size: .72rem; font-weight: 650; letter-spacing: .13em; }
+.support-nav-label { margin: 30px 12px 8px; padding-top: 20px; border-top: 1px solid var(--line); font-size: .7rem; font-weight: 700; letter-spacing: .12em; color: var(--muted); }
+.support-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: 30px 0; border: 1px solid #cbdfe9; border-radius: 12px; overflow: hidden; background: #edf6fc; }
+.support-stats > div { padding: 26px 18px; text-align: center; }
+.support-stats > div + div { border-left: 1px solid #cbdfe9; }
+.support-stats strong { display: block; font-size: 2.6rem; line-height: 1.15; font-weight: 500; color: var(--ocean); letter-spacing: -.05em; }
+.support-stats span { display: block; margin-top: 8px; font-size: .82rem; color: var(--muted); }
+.support-page .parts-table { border-radius: 10px; }
+.parts-table table { min-width: 690px; }
+.parts-table th:nth-child(2) { min-width: 135px; }
+.parts-table td:last-child { min-width: 275px; }
+.parts-table code { font: 600 .85rem/1.5 var(--sans); overflow-wrap: anywhere; }
+.part-status { display: inline-block; font-size: .72rem; line-height: 1.5; color: var(--muted); }
+.support-page .article-content .table-wrap th, .support-page .article-content .table-wrap td { line-height: 1.65; }
+.support-callout { margin: 32px 0; border: 1px solid #bdd9e8; border-left: 4px solid #6c9dc1; background: #edf6fc; border-radius: 0 10px 10px 0; padding: 24px 28px; }
+.support-callout .eyebrow { font-size: .7rem; }
+.support-callout p { margin-bottom: 0; }
+.support-process { padding: 0; list-style: none; margin: 32px 0; }
+.support-process li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.process-index { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: #dfedf7; color: var(--ocean); font-size: .8rem; font-weight: 650; }
+.article-content .support-process h3 { margin-top: 4px; margin-bottom: 0; font-size: 1.25rem; }
+.article-content .support-process p { margin-bottom: 0; }
+.support-milestones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; }
+.support-milestones > div { padding: 24px; }
+.support-milestones > div + div { border-left: 1px solid var(--line); }
+.article-content .support-milestones h3 { font-size: 1.15rem; margin: 14px 0; }
+.article-content .support-milestones p { font-size: .9rem; line-height: 1.7; margin-bottom: 0; }
+.members-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-block: 34px 55px; }
+.member-card { border: 1px solid #cedfe9; border-radius: 12px; overflow: hidden; background: var(--white); }
+.member-portrait { height: 190px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: linear-gradient(145deg, #deedf7, #eff6fa); }
+.member-portrait > span { width: 72px; height: 72px; border-radius: 50%; background: #aac6d8; position: relative; margin-bottom: 30px; }
+.member-portrait > span::after { content: ''; display: block; width: 132px; height: 90px; position: absolute; left: 50%; top: 84px; transform: translateX(-50%); background: #aac6d8; border-radius: 80px 80px 0 0; }
+.member-copy { padding: 20px; }
+.member-copy .small-label { font-size: .6rem; letter-spacing: .1em; }
+.article-content .member-copy h3 { font-size: 1.3rem; margin: 12px 0 8px; }
+.article-content .member-copy p { font-size: .86rem; margin: 0; color: var(--muted); }
+.advisor-placeholder { padding: 30px; background: #eff6fa; border: 1px solid #cbdfe9; border-radius: 12px; }
+.article-content .advisor-placeholder h3 { margin: 16px 0 0; }
+.article-content .advisor-placeholder p { margin-bottom: 0; }
+.attribution-table th:first-child { width: 38%; }
+.support-timeline { padding: 0; list-style: none; margin: 30px 0 50px; }
+.support-timeline li { display: grid; grid-template-columns: 170px minmax(0,1fr); gap: 30px; position: relative; padding: 0 0 38px 28px; border-left: 1px solid #c4d9e5; }
+.support-timeline li:last-child { padding-bottom: 0; }
+.support-timeline li::before { content: ''; position: absolute; width: 11px; height: 11px; background: #7ba3c5; border: 3px solid var(--paper); box-shadow: 0 0 0 1px #7ba3c5; border-radius: 50%; left: -6px; top: 6px; }
+.timeline-date { color: var(--ocean); font-size: .7rem; letter-spacing: .08em; font-weight: 650; line-height: 1.6; padding-top: 3px; }
+.article-content .support-timeline h3 { margin: 0; font-size: 1.25rem; }
+.article-content .support-timeline p { margin: 10px 0 0; font-size: .95rem; }
+@media (max-width: 1100px) {
+  .members-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .support-milestones { grid-template-columns: 1fr; }
+  .support-milestones > div + div { border-left: none; border-top: 1px solid var(--line); }
+  .support-timeline li { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 700px) {
+  .support-divider span { padding-inline: 24px; }
+  .support-hero > .wrap { padding-bottom: 42px; }
+  .support-callout { padding: 22px; }
+  .support-process li { gap: 14px; }
+  .support-stats > div { padding: 20px 10px; }
+  .support-stats strong { font-size: 2.1rem; }
+  .support-stats span { font-size: .73rem; }
+  .members-grid { gap: 14px; }
+  .member-portrait { height: 150px; }
+  .member-copy { padding: 16px; }
+  .article-content .member-copy h3 { font-size: 1.15rem; }
+  .article-content .member-copy p { font-size: .75rem; }
+}
+@media (max-width: 380px) { .members-grid { grid-template-columns: 1fr; } }

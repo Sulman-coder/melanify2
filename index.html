@@ -1,263 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#075473">
-    <meta name="description" content="MELANIFY explores a biological pathway from PET plastic waste to allomelanin. Discover our engineering, research and community work.">
-    <title>Plastic, reimagined. | MELANIFY</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer=""></script>
-  </head>
-  <body data-page="home">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
-        <nav id="main-nav" aria-label="Main navigation">
-          <a href="index.html" aria-current="page">Home</a>
-          <details class="nav-group">
-            <summary>Project<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="description.html">Project description</a>
-              <a href="entrepreneurship.html">Entrepreneurship</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary>Wet lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="engineering.html">Engineering</a>
-              <a href="protocols.html">Protocols</a>
-              <a href="results.html">Results</a>
-            </div>
-          </details>
-          <details class="nav-group">
-            <summary>Beyond the lab<span class="chevron"></span></summary>
-            <div class="nav-dropdown">
-              <a href="human-practices.html">Human practices</a>
-              <a href="education.html">Education</a>
-            </div>
-          </details>
-        </nav>
-        <a class="header-project" href="engineering.html">Explore the science<span class="tiny-orbit" aria-hidden="true"></span></a>
-      </div>
-      <div class="reading-progress" aria-hidden="true"></div>
-    </header>
-    <main id="main">
-      <section class="home-hero" id="top">
-        <div class="hero-copy hero-enter">
-          <div class="eyebrow"><span class="eyebrow-line"></span>SYNTHETIC BIOLOGY. CIRCULAR POSSIBILITY.</div>
-          <h1>Plastic waste.<br><span>A new purpose.</span></h1>
-          <p>What if the plastic we leave behind could help protect what lies ahead?</p>
-          <p class="hero-description">We’re MELANIFY. We’re exploring a biological pathway that transforms PET plastic into allomelanin — a pigment with potential for UV protection.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="description.html">Discover MELANIFY</a>
-            <a class="text-link" href="engineering.html">Inside the engineering<span class="link-line"></span></a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075473">
+  <meta name="description"
+    content="MELANIFY explores a biological pathway from PET plastic waste to allomelanin. Discover our engineering, research and community work.">
+  <title>Plastic waste. A new purpose. | MELANIFY</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer=""></script>
+</head>
+
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="MELANIFY home">
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+      </a> <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <details class="nav-group">
+          <summary>Project<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="description.html">Description: Problem Breakdown</a>
           </div>
-          <div class="hero-footnote">
-            <span class="small-label">FROM WASTE TO POSSIBILITY</span>
-            <span>PET plastic <span aria-hidden="true">/</span> Allomelanin</span>
-          </div>
-        </div>
-        <div class="hero-visual hero-enter">
-          <div class="hero-art">
-            <img src="assets/hero-art.webp" alt="Conceptual artwork showing a transparent PET fragment transforming into dark pigment" width="1536" height="1024" fetchpriority="high">
-            <span class="art-corner corner-one"></span>
-            <span class="art-corner corner-two"></span>
-          </div>
-          <div class="visual-label">
-            <span class="visual-index">01 / 06</span>
-            <span>REIMAGINING THE LIFE OF PET</span>
-            <span class="visual-cross" aria-hidden="true">+</span>
-          </div>
-          <div class="visual-caption">An idea at the intersection of biology and circular design.<span>CONCEPTUAL VISUAL</span></div>
-        </div>
-      </section>
-      <div class="pathway-ribbon" aria-label="Proposed pathway">
-        <span class="ribbon-label">THE PATHWAY</span>
-        <div>
-          <b>PET</b>
-          <span>MHET</span>
-          <span>TPA</span>
-          <span>PCA</span>
-          <span>Catechol</span>
-          <b>Allomelanin</b>
-        </div>
-        <span class="ribbon-note">One pathway. A different future.</span>
-      </div>
-      <section class="section-intro wrap">
-        <div data-reveal="">
-          <span class="eyebrow">01 / THE IDEA</span>
-          <h2>Two challenges.<br><em>One connected idea.</em></h2>
-        </div>
-        <div class="intro-body" data-reveal="">
-          <p>Plastic persists. Sun exposure is a daily reality. Our project begins by asking whether a material we discard could become something useful.</p>
-          <p>By connecting PET degradation with biological upcycling, we’re investigating a route to allomelanin, a functional biomaterial with potential UV-shielding properties.</p>
-          <a class="text-link" href="description.html">Read our project story<span class="link-line"></span></a>
-        </div>
-      </section>
-      <section class="ocean-section">
-        <div class="ocean-photo">
-          <img src="assets/ocean-palette.png" alt="A blue ocean wave, from the supplied color reference" loading="lazy" width="906" height="551" data-parallax="">
-        </div>
-        <div class="ocean-copy" data-reveal="">
-          <span class="eyebrow">ROOTED IN THAILAND</span>
-          <h2>A local question.<br>A wider possibility.</h2>
-          <p>Our community helped us connect plastic waste with Thailand’s intense UV exposure. Conversations with researchers and industry partners turned that question into a platform for exploring valuable PET-derived compounds.</p>
-          <a class="button button-light" href="human-practices.html">Meet the conversations</a>
-          <span class="ocean-note">Community-informed. Research-led.</span>
-        </div>
-      </section>
-      <section class="pathway-section wrap">
-        <div class="section-heading" data-reveal="">
-          <div>
-            <span class="eyebrow">02 / THE SCIENCE</span>
-            <h2>Small steps.<br><em>Molecular change.</em></h2>
-          </div>
-          <p>Six connected stages, from a persistent polymer to a new material. Explore the proposed MELANIFY pathway.</p>
-        </div>
-        <div class="pathway-explorer" data-reveal="">
-          <nav class="pathway-tabs" aria-label="Explore pathway stages">
-            <a id="pathway-tab-0" class="pathway-tab" href="#pathway-panel-0" data-stage="0" aria-selected="false" tabindex="-1"><span>01</span>PET</a>
-            <a id="pathway-tab-1" class="pathway-tab" href="#pathway-panel-1" data-stage="1" aria-selected="false" tabindex="-1"><span>02</span>MHET</a>
-            <a id="pathway-tab-2" class="pathway-tab" href="#pathway-panel-2" data-stage="2" aria-selected="false" tabindex="-1"><span>03</span>TPA</a>
-            <a id="pathway-tab-3" class="pathway-tab" href="#pathway-panel-3" data-stage="3" aria-selected="false" tabindex="-1"><span>04</span>PCA</a>
-            <a id="pathway-tab-4" class="pathway-tab" href="#pathway-panel-4" data-stage="4" aria-selected="false" tabindex="-1"><span>05</span>Catechol</a>
-            <a id="pathway-tab-5" class="pathway-tab" href="#pathway-panel-5" data-stage="5"><span>06</span>Allomelanin</a>
-          </nav>
-          <div class="pathway-panel" id="pathway-panel-0" aria-label="PET">
-            <div class="stage-number" aria-hidden="true">01</div>
-            <div class="stage-copy">
-              <span class="eyebrow">The starting material</span>
-              <h3>PET plastic</h3>
-              <p>A persistent polymer becomes the starting point for our proposed upcycling pathway. Engineered Pichia pastoris is used to produce and secrete HotPETase.</p>
-              <div class="stage-tags">
-                <span>HotPETase</span>
-                <span>Pichia pastoris</span>
-              </div>
-              <a class="text-link" href="engineering.html#hotpetase">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-          <div class="pathway-panel" id="pathway-panel-1" aria-label="MHET">
-            <div class="stage-number" aria-hidden="true">02</div>
-            <div class="stage-copy">
-              <span class="eyebrow">Breaking the polymer down</span>
-              <h3>MHET</h3>
-              <p>HotPETase begins PET degradation. Surface-displayed MHETase is intended to convert the resulting MHET into terephthalic acid.</p>
-              <div class="stage-tags">
-                <span>InaVN–MHETase</span>
-                <span>E. coli</span>
-              </div>
-              <a class="text-link" href="engineering.html#inavn-mhetase">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-          <div class="pathway-panel" id="pathway-panel-2" aria-label="TPA">
-            <div class="stage-number" aria-hidden="true">03</div>
-            <div class="stage-copy">
-              <span class="eyebrow">Connecting recovery to upcycling</span>
-              <h3>Terephthalic acid</h3>
-              <p>The tphA1, tphA2, tphA3 and tphB pathway is designed to convert recovered TPA into protocatechuate, connecting PET degradation with a downstream biological route.</p>
-              <div class="stage-tags">
-                <span>TphA1 / A2 / A3 / B</span>
-                <span>E. coli</span>
-              </div>
-              <a class="text-link" href="engineering.html#tpa-to-pca">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-          <div class="pathway-panel" id="pathway-panel-3" aria-label="PCA">
-            <div class="stage-number" aria-hidden="true">04</div>
-            <div class="stage-copy">
-              <span class="eyebrow">A new biochemical direction</span>
-              <h3>Protocatechuate</h3>
-              <p>PCA is the intermediate that connects the TPA pathway to catechol production. AroY performs the decarboxylation step with cofactor support from EcdB and EcdD.</p>
-              <div class="stage-tags">
-                <span>AroY / EcdB / EcdD</span>
-                <span>Cofactor-supported conversion</span>
-              </div>
-              <a class="text-link" href="engineering.html#aroy-ecdb-ecdd">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-          <div class="pathway-panel" id="pathway-panel-4" aria-label="Catechol">
-            <div class="stage-number" aria-hidden="true">05</div>
-            <div class="stage-copy">
-              <span class="eyebrow">The pigment precursor</span>
-              <h3>Catechol</h3>
-              <p>Catechol is the precursor for the final material. Oxidation and polymerization form the next stage of the proposed MELANIFY pathway.</p>
-              <div class="stage-tags">
-                <span>Oxidation &amp; polymerization</span>
-                <span>Material formation</span>
-              </div>
-              <a class="text-link" href="description.html">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-          <div class="pathway-panel" id="pathway-panel-5" aria-label="Allomelanin">
-            <div class="stage-number" aria-hidden="true">06</div>
-            <div class="stage-copy">
-              <span class="eyebrow">A functional biomaterial</span>
-              <h3>Allomelanin</h3>
-              <p>The pathway aims to produce catechol-melanin, or allomelanin. Its potential as a UV-shielding material is a research direction that requires further material and safety validation.</p>
-              <div class="stage-tags">
-                <span>Catechol-melanin</span>
-                <span>Potential UV-shielding pigment</span>
-              </div>
-              <a class="text-link" href="description.html">Explore this stage<span class="link-line"></span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="chapter-section wrap">
-        <div class="section-heading" data-reveal="">
-          <div>
-            <span class="eyebrow">03 / EXPLORE THE WORK</span>
-            <h2>Every part of<br><em>the bigger picture.</em></h2>
-          </div>
-          <p>Follow our work from the first design decision to the conversations beyond the laboratory.</p>
-        </div>
-        <div class="chapter-grid">
-          <a class="chapter-card" href="engineering.html" data-reveal=""><div class="card-top"><span>01</span><span class="card-symbol" aria-hidden="true">◎</span></div><h3>Engineering</h3><strong>Design. Build. Test. Learn.</strong><p>Follow the iterative work behind our enzymes and conversion pathways.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-          <a class="chapter-card" href="results.html" data-reveal=""><div class="card-top"><span>02</span><span class="card-symbol" aria-hidden="true">◉</span></div><h3>Results</h3><strong>A closer look at the evidence.</strong><p>Explore the supplied molecular dynamics analyses and structural figures.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-          <a class="chapter-card" href="protocols.html" data-reveal=""><div class="card-top"><span>03</span><span class="card-symbol" aria-hidden="true">≡</span></div><h3>Protocols</h3><strong>Methods, made accessible.</strong><p>Browse the laboratory notebook for our Pichia pastoris expression line.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-          <a class="chapter-card" href="human-practices.html" data-reveal=""><div class="card-top"><span>04</span><span class="card-symbol" aria-hidden="true">⌘</span></div><h3>Human practices</h3><strong>Listening shapes the science.</strong><p>Discover how community and expert feedback influenced MELANIFY.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-          <a class="chapter-card" href="education.html" data-reveal=""><div class="card-top"><span>05</span><span class="card-symbol" aria-hidden="true">✳</span></div><h3>Education</h3><strong>Making room for curiosity.</strong><p>See how laboratory experience became lessons and a lasting student club.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-          <a class="chapter-card" href="entrepreneurship.html" data-reveal=""><div class="card-top"><span>06</span><span class="card-symbol" aria-hidden="true">◇</span></div><h3>Entrepreneurship</h3><strong>A pathway toward application.</strong><p>Explore the commercial questions behind biological PET upcycling.</p><span class="card-bottom">EXPLORE CHAPTER<span class="card-plus" aria-hidden="true">+</span></span></a>
-        </div>
-      </section>
-      <section class="closing-section wrap">
-        <span class="eyebrow" data-reveal="">THE NEXT CHAPTER STARTS WITH A QUESTION</span>
-        <h2 data-reveal="">What else could<br><em>plastic become?</em></h2>
-        <a class="button button-primary" href="engineering.html" data-reveal="">Explore our engineering</a>
-        <span class="closing-word" aria-hidden="true">MELANIFY.</span>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a>
-          <p>Rethinking plastic.<br>Exploring what comes next.</p>
-        </div>
-        <div class="footer-links">
-          <div>
-            <span>THE SCIENCE</span>
-            <a href="description.html">Our project</a>
+        </details>
+        <details class="nav-group">
+          <summary>Wet Lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
             <a href="engineering.html">Engineering</a>
             <a href="results.html">Results</a>
-            <a href="protocols.html">Protocols</a>
+            <a href="protocols.html">Protocols &amp; Notebook</a>
+            <a href="parts.html">Parts</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="safety.html">Safety</a>
           </div>
-          <div>
-            <span>THE CONNECTIONS</span>
-            <a href="human-practices.html">Human practices</a>
+        </details>
+        <details class="nav-group">
+          <summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="human-practices.html">Integrated Human Practices</a>
             <a href="education.html">Education</a>
             <a href="entrepreneurship.html">Entrepreneurship</a>
           </div>
+        </details>
+        <details class="nav-group">
+          <summary>Team<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="members.html">Members</a>
+            <a href="attributions.html">Attributions</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+
+  <main id="main">
+
+    <section class="home-hero" id="top">
+
+      <!-- Hero Image -->
+      <!-- <div class="hero-image">
+    <img src="images/hero-image-removebg-preview.png" alt="MELANIFY hero image">
+  </div> -->
+
+    
+
+      <!-- Text Image: Slowly Moves Forward and Backward -->
+      <div class="hero-image" id="logo1">
+        <img src="assets/logo_1-removebg-preview-removebg-preview.png" alt="MELANIFY Text">
+      </div>
+
+      <!-- Logo Image: Gently Moves -->
+      <div class="hero-image" id="logo2">
+        <img src="assets/logo_2-removebg-preview-removebg-preview.png" alt="MELANIFY Logo">
+      </div>
+
+      <!-- Heading and Paragraph Below Image -->
+      <div class="hero-copy">
+        <h1>Plastic waste.<br><span>A new purpose.</span></h1>
+
+        <p>
+          What if the plastic we leave behind could help protect what lies ahead?
+        </p>
+      </div>
+
+    </section>
+    <section class="purpose-section wrap" id="our-purpose">
+      <span class="eyebrow" data-reveal>SYNTHETIC BIOLOGY. CIRCULAR POSSIBILITY.</span>
+      <h1 data-reveal>Plastic waste.<br><em>A new purpose.</em></h1>
+      <p data-reveal>What if the plastic we leave behind could help protect what lies ahead?</p>
+      <a class="text-link" href="description.html" data-reveal>Discover MELANIFY <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="regional-section wrap" aria-labelledby="regional-heading">
+      <h2 class="eyebrow" id="regional-heading">01 / REGIONAL CONTEXT</h2>
+      <div class="regional-grid">
+
+        <article class="regional-card" data-reveal>
+          <span class="stat-icon" aria-hidden="true">
+            <img src="assets/binicon.jpeg" alt="" class="regional-icon">
+          </span>
+          <h3>1.8M+ <span>Tons</span></h3>
+          <p>
+            Annual PET &amp; plastic waste generated in Thailand.
+            <sup><a href="#home-ref-1" aria-label="Reference 1">[1]</a></sup>
+          </p>
+          <span class="stat-index">PLASTIC POLLUTION / 01</span>
+        </article>
+
+        <article class="regional-card" data-reveal>
+          <span class="stat-icon sun-icon" aria-hidden="true">
+            <img src="assets/sunicon.jpeg" alt="" class="regional-icon">
+          </span>
+          <h3>11+ <span>Very High</span></h3>
+          <p>
+            Extreme UV Index in Thailand requiring daily protection.
+            <sup><a href="#home-ref-3" aria-label="Reference 3">[3]</a></sup>
+          </p>
+          <span class="stat-index">SOLAR EXPOSURE / 02</span>
+        </article>
+
+        <article class="regional-card" data-reveal>
+          <span class="stat-icon" aria-hidden="true">
+            <img src="assets/creamicon.jpeg" alt="" class="regional-icon">
+          </span>
+          <h3>100% <span>Ban</span></h3>
+          <p>
+            National park ban on specified harmful sunscreen chemicals in Thailand.
+            <sup><a href="#home-ref-4" aria-label="Reference 4">[4]</a></sup>
+          </p>
+          <span class="stat-index">MARINE PROTECTION / 03</span>
+        </article>
+
+      </div>
+    </section>
+    <section class="unmet-section wrap" aria-labelledby="unmet-heading">
+      <div class="center-heading" data-reveal><span class="eyebrow">02 / THE UNMET NEED</span>
+        <h2 id="unmet-heading">Two problems.<br><em>One urgent question.</em></h2>
+        <p>Why mechanical recycling and current sunscreens fall short.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="problem-card" data-reveal>
+          <div class="problem-image"><img src="assets/client-plastic-bottles.webp"
+              alt="Different shapes of PET plastic bottles" loading="lazy" width="1800" height="1440"></div>
+          <div class="problem-copy"><span class="eyebrow">THE MATERIAL CHALLENGE</span>
+            <h3>The Recycling Bottleneck</h3>
+            <p>Mechanical recycling breaks down plastic’s molecular structure, causing it to lose strength and quality
+              after every cycle. This forces most recycled PET into lower-value products, like carpets and textiles,
+              that eventually end up in landfills anyway, while chemical upcycling remains costly and energy-intensive.
+            </p>
+          </div>
+        </article>
+        <article class="problem-card" data-reveal>
+          <div class="problem-image coral-image"><img src="assets/client-coral-bleaching.webp"
+              alt="Illustration comparing healthy coral with bleached coral" loading="lazy" width="1800" height="1800">
+          </div>
+          <div class="problem-copy"><span class="eyebrow">THE PROTECTION CHALLENGE</span>
+            <h3>The UV Protection Dilemma</h3>
+            <p>Synthetic chemical UV filters can damage coral and marine ecosystems, triggering government restrictions.
+              Mineral alternatives, such as ZnO and TiO₂, require mining and processing, can be expensive, and may leave
+              an undesirable white cast on the skin, limiting consumer adoption.</p>
+          </div>
+        </article>
+      </div>
+      <div class="center-action"><a class="button button-primary" href="description.html#current-solutions">Explore our
+          problem in more detail <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="solution-section" aria-labelledby="solution-heading">
+      <div class="solution-inner wrap">
+        <div class="solution-art" data-reveal><img src="assets/remove-bg-banner.png"
+            alt="MELANIFY connects discarded plastic with sun protection" loading="lazy" width="827"
+            height="481"><span>FROM PET WASTE TO A NEW POSSIBILITY</span></div>
+        <div class="solution-copy" data-reveal><span class="pill-label">OUR SOLUTION</span>
+          <h2 id="solution-heading">A Biological Engine for<br><em>Upcycling PET Plastic</em></h2>
+          <p>We developed an integrated dual-host bioconversion pathway designed to transform post-consumer PET plastic
+            waste into allomelanin. MELANIFY explores sustainable UV photoprotection by directly connecting plastic
+            degradation to biomaterial synthesis.</p><a class="button button-primary"
+            href="description.html#our-solution">Read full project description <span aria-hidden="true">→</span></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>MELANIFY · XCL American School of Bangkok</span>
-        <span>A synthetic biology research project</span>
-        <a href="#top">Back to top</a>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <section class="benefits-section wrap" aria-labelledby="benefits-heading"> */
+       <div class="center-heading" data-reveal><span class="eyebrow">03 / THE POSSIBILITY</span>
+        <h2 id="benefits-heading">Three impacts.<br><em>One biological innovation.</em></h2>
+        <p>The material properties and environmental goals guiding our research.</p>
       </div>
-    </footer>
-  </body>
+      <div class="benefit-grid">
+        <article class="benefit-card" data-reveal>
+          <div class="benefit-image"><img src="assets/client-coral-reef.webp" alt="A living coral reef" loading="lazy"
+          
+              width="1000" height="750"></div><span class="eyebrow">01 — ENVIRONMENTAL PROTECTION</span>
+          <h3>Reef-Safe UV Shield</h3>
+          <p>Our goal is a biodegradable, non-nano biomaterial that replaces chemicals such as oxybenzone and protects
+            human skin while respecting marine ecosystems.</p>
+        </article>
+        <article class="benefit-card" data-reveal>
+           <div class="benefit-image"><img src="assets/client-plastic-bottles.webp" loading="lazy"  
+         
+
+           
+              alt="PET bottles as a feedstock for biological upcycling" loading="lazy" width="1800" height="1440"></div>
+          <span class="eyebrow">02 — SUSTAINABLE FEEDSTOCK</span>
+          <h3>Upcycled Plastic Waste</h3>
+          <p>Transforms uncollected PET plastic bottles into a high-value pigment, diverting persistent plastic
+            pollution from Thai rivers and oceans into a closed-loop economic model.</p>
+        </article>
+        <article class="benefit-card" data-reveal>
+          <div class="benefit-image"><img src="assets/client-allomelanin.webp"
+              alt="Conceptual structure of the allomelanin pigment" loading="lazy" width="1024" height="559"></div><span
+            class="eyebrow">03 — PERFORMANCE BIO-ACTIVE</span>
+          <h3>UV-Booster &amp; Antioxidant</h3>
+          <p>Combines broad-spectrum light extinction with free-radical scavenging capabilities, with the aim of
+            enhancing UV protection and reducing oxidative stress.</p>
+        </article>
+      </div> 
+
+
+
+      <!-- Centered Intro Above Engineering Section --> 
+   <div class="engineering-top-intro"> Behind this complete story 
+      is rigorous biological engineering, modeling data, 
+      and experimental validation. </div>
+
+    <!-- Engineering Section -->
+    <div class="engineering-callout">
+
+      <div class="engineering-content">
+
+        <span class="engineering-eyebrow">
+          BEHIND THE INNOVATION
+        </span>
+
+        <h2>From Plastic Waste to Precision Engineering</h2>
+
+        <p>
+          Dive into our iterative Design-Build-Test-Learn cycles,
+          enzyme characterizations, and expression models behind
+          the six-step MELANIFY pathway.
+        </p>
+
+        <a href="engineering.html" class="engineering-button">
+          Explore Our Engineering
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+      <div class="engineering-decoration" aria-hidden="true">
+        <span class="engineering-circle circle-one"></span>
+        <span class="engineering-circle circle-two"></span>
+        <span class="engineering-circle circle-three"></span>
+        <span class="engineering-line"></span>
+      </div>
+
+    </div>
+
+  </div> 
+    </section>
+
+
+    <section class="lab-section wrap" aria-labelledby="lab-heading">
+      <div class="lab-intro" data-reveal><span class="eyebrow">04 / INSIDE THE LAB</span>
+        <h2 id="lab-heading">Synthetic Biology<br><em>&amp; Wet Lab</em></h2>
+        <h3>From Plastic Monomers to UV Protection</h3>
+        <p>To convert persistent plastic waste into photoprotection, MELANIFY uses a dual-host synthetic pipeline
+          dividing PET monomer degradation and allomelanin synthesis between <i>Pichia pastoris</i> and <i>Escherichia
+            coli</i>. Explore our iterative Design-Build-Test-Learn cycles, plasmid construction, and quantitative assay
+          results.</p>
+      </div>
+      <div class="lab-links"><a href="engineering.html" data-reveal><span class="eyebrow">01 / DESIGN. BUILD. TEST.
+            LEARN.</span>
+          <h3>Engineering &amp; Wet Lab <span aria-hidden="true">↗</span></h3>
+          <p>Dive into our iterative DBTL design cycles, genetic construct validation, and experimental assay data
+            across both host chassis.</p><span class="text-link">Explore Wet Lab &amp; Engineering →</span>
+        </a><a href="safety.html" data-reveal><span class="eyebrow">02 / RESPONSIBLE RESEARCH</span>
+          <h3>Safety &amp; Biosafety <span aria-hidden="true">↗</span></h3>
+          <p>Discover our biocontainment protocols, dual-host organism risk assessment, and lab safety measures.</p>
+          <span class="text-link">View Safety Protocols →</span>
+        </a></div>
+    </section>
+    <section class="dive-section" aria-labelledby="dive-heading">
+      <div class="wrap"><span class="eyebrow">05 / EXPLORE MELANIFY</span>
+        <h2 id="dive-heading">Ready to <em>Dive Deeper?</em></h2>
+        <div class="dive-links">
+          <a href="description.html"><span class="dive-index">01</span>
+            <h3>Project</h3>
+            <p>Explore our project description, dual-host pipeline, and design.</p><span class="dive-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+          <a href="engineering.html"><span class="dive-index">02</span>
+            <h3>Wet Lab</h3>
+            <p>Dive into engineering cycles, results, parts, and safety protocols.</p><span class="dive-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+          <a href="human-practices.html"><span class="dive-index">03</span>
+            <h3>Integrated Human Practices</h3>
+            <p>See how stakeholder feedback, education, and market analysis shaped us.</p><span class="dive-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+          <a href="members.html"><span class="dive-index">04</span>
+            <h3>Team &amp; Attributions</h3>
+            <p>Meet the students and advisors behind MELANIFY and view attributions.</p><span class="dive-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="partners-section wrap" aria-label="Partners and sponsor">
+      <div class="partner-group">
+        <h2 class="eyebrow">OUR PARTNERS</h2><img class="partner-strip" src="assets/client-partners.webp"
+          alt="BCCU Biochemistry Science Chula, Anthropic, SnapGene, GenScript, IDT, and Twist Bioscience" width="882"
+          height="73" loading="lazy"><img class="school-logo" src="assets/client-asb.webp"
+          alt="American School of Bangkok Sukhumvit" width="447" height="447" loading="lazy">
+      </div>
+      <div class="sponsor-group">
+        <h2 class="eyebrow">OUR SPONSOR</h2><img src="assets/client-smt.webp" alt="SMT sponsor logo" width="1280"
+          height="1080" loading="lazy">
+      </div>
+    </section>
+    <section class="home-references wrap">
+      <details>
+        <summary>References <span aria-hidden="true">+</span></summary>
+        <ol>
+          <li id="home-ref-1">Thailand.go.th. (2023). <a href="https://www.thailand.go.th/event-detail/001_04_028"
+              target="_blank" rel="noopener noreferrer">Statistics of plastic waste in Thailand that can be solved by
+              all sectors.</a></li>
+          <li>World Bank. (2022). Plastic waste material flow analysis for Thailand: Summary report. Marine Plastics
+            Series, East Asia and Pacific Region.</li>
+          <li id="home-ref-3">Thai Meteorological Department. <a href="https://ozone.tmd.go.th/UV_index.htm"
+              target="_blank" rel="noopener noreferrer">UV index. Ozone and Radiation Center.</a></li>
+          <li id="home-ref-4">Department of National Parks, Wildlife and Plant Conservation. <a
+              href="https://portal.dnp.go.th/Content/nationalpark?contentId=25456" target="_blank"
+              rel="noopener noreferrer">Notification on sunscreen chemical restrictions in national parks.</a></li>
+        </ol>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-top">
+    
+    <div><a class="brand" href="index.html" aria-label="MELANIFY home">
+    <img src="images/logo2.jpeg" alt="MELANIFY Logo" class="footer-logo"></a>
+        <p>Rethinking plastic.<br>Exploring what comes next.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div><span>PROJECT</span><a href="description.html">Our project</a></div>
+        <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
+            href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
+            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+        <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
+            href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+        <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
+        project</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  
+
+
+
+</script>
+</body>
 </html>

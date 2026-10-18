@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#075473">
+    <meta name="description" content="A collection of sixteen parts connecting PET degradation, monomer conversion, and the production of a melanin precursor across two host organisms.">
+    <title>Parts | MELANIFY</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="supporting-pages.css">
+    <script src="script.js" defer></script>
+
+       <style>
+        .brand {
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+.brand-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+    </style>
+    <link rel="stylesheet" href="banner.css">
+</head>
+  <body data-page="parts" class="support-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+   <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="MELANIFY home">
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+      </a> <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <details class="nav-group">
+          <summary>Project<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="description.html">Description: Problem Breakdown</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Wet Lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="engineering.html">Engineering</a>
+            <a href="results.html">Results</a>
+            <a href="protocols.html">Protocols &amp; Notebook</a>
+            <a href="parts.html">Parts</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="safety.html">Safety</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="human-practices.html">Integrated Human Practices</a>
+            <a href="education.html">Education</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+          </div>
+        </details>
+        <details class="nav-group">
+          <summary>Team<span class="chevron" aria-hidden="true"></span></summary>
+          <div class="nav-dropdown">
+            <a href="members.html">Members</a>
+            <a href="attributions.html">Attributions</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+    <div class="page-banner" aria-hidden="true">
+    <img src="images/banner.jpeg" alt="" width="1024" height="589" decoding="async" fetchpriority="high">
+  </div>
+    <main id="main">
+      <section class="chapter-hero support-hero" id="top">
+        <div class="wrap">
+          <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Wet Lab<span>/</span>Parts</div>
+          <div class="eyebrow">Parts</div>
+          <h1>The building blocks<br>of our pathway.</h1>
+          <p>A collection of sixteen parts connecting PET degradation, monomer conversion, and the production of a melanin precursor across two host organisms.</p>
+        </div>
+      </section>
+      <div class="support-divider" aria-hidden="true"><span>MELANIFY / WET LAB</span></div>
+      <div class="article-layout wrap">
+        <aside class="article-sidebar">
+          <div class="toc-sticky">
+            <span class="small-label">ON THIS PAGE</span>
+            <nav class="toc" aria-label="Page contents">
+              <a class="toc-primary" href="#collection">Our collection</a>
+              <a class="toc-primary" href="#basic-parts">Basic parts</a>
+              <a class="toc-primary" href="#composite-parts">Composite parts</a>
+              <a class="toc-primary" href="#devices">Devices & translational units</a>
+              <span class="support-nav-label">WET LAB</span>
+              <a href="engineering.html">Engineering</a>
+              <a href="results.html">Results</a>
+              <a href="protocols.html">Protocols &amp; Notebook</a>
+              <a href="parts.html">Parts</a>
+              <a href="implementation.html">Implementation</a>
+              <a href="safety.html">Safety</a>
+            </nav>
+          </div>
+        </aside>
+        <article class="article-content" id="chapter-content">
+          <h2 id="collection">A collection for two hosts</h2>
+          <p>Since MELANIFY requires two hosts, our parts collection reflects that. One secretion mechanism in <i>Pichia pastoris</i> produces the thermostable HotPETase, which degrades PET into terephthalic acid and MHET. These compounds are transported to catechol, the precursor of allomelanin, in <i>Escherichia coli</i> by a sequence of cassettes. Hydrolysis is finished by the cell surface-displayed MHETase. Terephthalic acid is converted to protocatechuic acid by the four <i>tph</i> genes of <i>Comamonas</i> sp. E6, and then to catechol by AroY.</p>
+          <div class="support-stats" aria-label="Parts collection summary"><div><strong>8</strong><span>Coding parts</span></div><div><strong>4</strong><span>Composite parts</span></div><div><strong>4</strong><span>Devices</span></div></div>
+          <p>Prior to synthesis, we optimized each codon for its target host and checked it against its DNA and protein references in UniProt or NCBI. Part numbers will be assigned on submission.</p>
+          <h2 id="basic-parts">Basic parts</h2>
+          <div class="table-wrap parts-table" tabindex="0" role="region" aria-label="Coding sequences">
+            <table>
+              <caption>Coding sequences</caption>
+              <thead><tr><th scope="col">Part number</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Part description</th></tr></thead>
+              <tbody>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>HotPETase</code></th><td>Coding</td><td>Thermostable engineered PETase (266 aa body, PDB 7QVH reference) that depolymerises PET to MHET and TPA. Codon-optimised for <i>Pichia pastoris</i>. 798 bp CDS body.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>InaV-N</code></th><td>Coding</td><td>N-terminal anchoring domain of <i>Pseudomonas syringae</i> ice nucleation protein (ENA AJ001086), 204 aa. Targets a fused passenger protein to the outer membrane of <i>E. coli</i> for surface display.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>MHETase</code></th><td>Coding</td><td>Mature MHET hydrolase from <i>Ideonella sakaiensis</i> (A0A0K8P8E7, native signal peptide 1–18 removed, 585 aa). Hydrolyses MHET to TPA and ethylene glycol.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphA2</code></th><td>Coding</td><td>Oxygenase alpha (large) subunit of terephthalate 1,2-dioxygenase from <i>Comamonas</i> sp. E6; Rieske [2Fe-2S] plus mononuclear Fe. 1245 bp, 414 aa.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphA1</code></th><td>Coding</td><td>Reductase component of terephthalate 1,2-dioxygenase from <i>Comamonas</i> sp. E6; FAD and [2Fe-2S]. Supplies electrons to the TphA2/A3 oxygenase. 1011 bp, 336 aa.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphA3</code></th><td>Coding</td><td>Oxygenase beta (small) subunit of terephthalate 1,2-dioxygenase from <i>Comamonas</i> sp. E6. 465 bp, 154 aa.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphB</code></th><td>Coding</td><td>1,2-dihydroxy-3,5-cyclohexadiene-1,4-dicarboxylate (DCD) dehydrogenase from <i>Comamonas</i> sp. E6; converts DCD to protocatechuic acid. 948 bp, 315 aa.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>aroY</code></th><td>Coding</td><td>Protocatechuate decarboxylase (prFMN-dependent, UbiD family); converts protocatechuic acid to catechol. 1488 bp, 494 aa. Two internal BamHI sites removed during codon optimisation.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="composite-parts">Composite parts</h2>
+          <div class="table-wrap parts-table" tabindex="0" role="region" aria-label="Fusions and bicistronic cassettes">
+            <table>
+              <caption>Fusions and bicistronic cassettes</caption>
+              <thead><tr><th scope="col">Part number</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Part description</th></tr></thead>
+              <tbody>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>MFα-HotPETase-His6</code></th><td>Composite</td><td><i>S. cerevisiae</i> alpha-factor prepro secretion leader (89 aa, Kex2/Ste13 processed) fused in frame to HotPETase with a C-terminal His6. 1098 bp ORF, 365 aa precursor; secreted product is 276 aa and carries an N-terminal YVEFM cloning scar.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>InaVN-MHETase-His6</code></th><td>Composite</td><td>Surface-display fusion: InaV-N anchor (aa 1–204), (GGGGS)3 flexible linker (aa 205–219), mature MHETase (aa 220–804), C-terminal His6. 2433 bp ORF, 810 aa. Displays active MHETase on the <i>E. coli</i> outer membrane.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphA2-tphA1</code></th><td>Composite</td><td>Bicistronic cassette: tphA2 followed by a synthetic SD and tphA1, co-expressing the oxygenase alpha subunit and the reductase of terephthalate 1,2-dioxygenase.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>tphA3-tphB</code></th><td>Composite</td><td>Bicistronic cassette: tphA3 followed by a synthetic SD and tphB, co-expressing the oxygenase beta subunit and the DCD dehydrogenase.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 id="devices">Devices &amp; translational units</h2>
+          <div class="table-wrap parts-table" tabindex="0" role="region" aria-label="Expression-ready devices">
+            <table>
+              <caption>Expression-ready devices</caption>
+              <thead><tr><th scope="col">Part number</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Part description</th></tr></thead>
+              <tbody>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>T7-MFα-HotPETase (AOX1)</code></th><td>Device</td><td>Methanol-inducible AOX1 promoter, alpha-factor secretion leader, HotPETase-His6 and AOX1 terminator, in pPIC9K for single-crossover genomic integration in <i>P. pastoris</i> (HIS4 marker, G418 multicopy selection). Secretes glycosylated HotPETase.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>T7-InaVN-MHETase</code></th><td>Device</td><td>T7lac-driven translational unit expressing the InaV-N–MHETase surface-display fusion in <i>E. coli</i> BL21(DE3), with T7 terminator.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>TPA-to-PCA pathway</code></th><td>Device</td><td>Complete terephthalate to protocatechuate pathway in pETDuet-1: MCS1 (T7lac, tphA2 + tphA1) and MCS2 (T7lac, tphA3 + tphB). Converts TPA to PCA via DCD in <i>E. coli</i>. Note: no TphC transporter, so TPA uptake requires lysate or permeabilised cells.</td></tr>
+                <tr><td><span class="part-status">Assign on submission</span></td><th scope="row"><code>T7-aroY</code></th><td>Device</td><td>T7lac translational unit expressing AroY in pETDuet-1 MCS1, decarboxylating PCA to catechol. Requires prFMN supplied by EcdB.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <a class="next-chapter" href="implementation.html"><span><span class="small-label">CONTINUE EXPLORING</span><strong>Implementation</strong></span><span class="next-plus" aria-hidden="true">+</span></a>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-top">
+    
+    <div><a class="brand" href="index.html" aria-label="MELANIFY home">
+    <img src="images/logo2.jpeg" alt="MELANIFY Logo" style="width: 80px; height: auto; object-fit: contain;"></a>
+        <p>Rethinking plastic.<br>Exploring what comes next.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <div><span>PROJECT</span><a href="description.html">Our project</a></div>
+        <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
+            href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
+            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+        <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
+            href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+        <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>MELANIFY · XCL American School of Bangkok</span><span>A synthetic biology research
+        project</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* Wet lab reading layouts and the standalone laboratory notebook. */
+.wetlab-hero {
+  background-color: #edf7fb;
+  background-image: linear-gradient(90deg, #edf7fb 5%, #edf7fbf2 38%, #edf7fb7a 70%, #edf7fb14), url('assets/client-wetlab-culture-2.webp');
+  background-position: center, right 42%;
+  background-size: cover, 50% auto;
+  background-repeat: no-repeat;
+}
+.wetlab-hero > .wrap { min-height: 440px; display: flex; flex-direction: column; align-items: flex-start; padding-block: 26px 32px; }
+.wetlab-hero .breadcrumb { margin-bottom: 44px; }
+.wetlab-hero h1 { font-size: 1rem; line-height: 1.4; font-weight: 600; letter-spacing: .035em; margin: 0 0 16px; }
+.wetlab-hero .chapter-subtitle { color: var(--ink); font-size: clamp(2.5rem, 5.2vw, 5rem); font-weight: 500; line-height: 1.07; letter-spacing: -.055em; max-width: 720px; margin: 0 0 55px; }
+.wetlab-hero .hero-footnote { font-size: .85rem; letter-spacing: .02em; color: var(--ocean); margin: auto 0 0; max-width: 550px; }
+.wetlab-nav { display: grid; gap: 4px; padding-bottom: 25px; border-bottom: 1px solid var(--line); margin-bottom: 25px; }
+.wetlab-nav .small-label { margin-bottom: 9px; }
+.wetlab-nav a { display: block; padding: 10px 12px; font-size: .875rem; border-radius: 6px; color: var(--muted); }
+.wetlab-nav a:hover { background: #edf7fb; color: var(--ocean); }
+.wetlab-nav a[aria-current="page"] { color: var(--ocean); background: #e4f3fa; font-weight: 600; }
+.dbtl-stage { padding-block: 5px 20px; }
+.dbtl-stage + .dbtl-stage { border-top: 1px solid var(--line); }
+.dbtl-stage .stage-heading { font-size: 1.25rem; letter-spacing: -.015em; }
+.dbtl-stage h5 { font-size: 1.05rem; line-height: 1.4; margin-top: 28px; margin-bottom: 12px; }
+.stage-heading { color: var(--ocean); }
+.wetlab-photo-grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 14px; margin-block: 28px; align-items: start; }
+.wetlab-photo-grid .research-figure { margin: 0; min-width: 0; }
+.wetlab-photo-grid .research-figure img { height: 250px; width: 100%; object-fit: contain; background: #f1f6f9; }
+.wetlab-photo-grid .research-figure figcaption { font-size: .72rem; line-height: 1.5; }
+.protocol-layout { max-width: 1480px; grid-template-columns: 200px minmax(0,1fr); gap: 42px; }
+.protocols-page .protocol-intro { max-width: none; }
+.protocols-page .article-content { min-width: 0; }
+.protocols-page .protocol-intro > p { max-width: 720px; }
+.protocols-page .notebook-viewer { border: 3px solid #c6e7f5; border-radius: 18px; margin-top: 32px; box-shadow: 0 18px 48px #07547308; background: #f2f9fc; }
+.protocols-page .notebook-toolbar { background: #edf8fc; border-bottom-color: #c6e7f5; padding: 20px 24px; }
+.protocols-page .notebook-viewer iframe { background: #edf6fa; height: min(86vh,1000px); min-height: 650px; }
+.notebook-document { background: #eaf3f8; }
+.notebook-document-header { max-width: 950px; align-items: flex-end; font-size: .75rem; }
+.notebook-document-header h1 { font-size: 1.3rem; margin-top: 8px; }
+.notebook-document-header a, .notebook-document-footer a { color: var(--ocean); text-decoration: underline; text-underline-offset: 4px; }
+.notebook-page { max-width: 950px; }
+.notebook-page-label a { text-decoration: underline; text-underline-offset: 3px; }
+.notebook-transcript { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.8; }
+.notebook-document-footer { max-width: 950px; margin: 28px auto 10px; text-align: center; font-size: .85rem; }
+@media (max-width: 1000px) {
+  .wetlab-hero { background-size: cover, 64% auto; }
+  .protocol-layout { grid-template-columns: 170px minmax(0,1fr); gap: 26px; }
+  .wetlab-photo-grid { grid-template-columns: 1fr 1fr; }
+  .wetlab-photo-grid .research-figure:first-child { grid-row: span 2; }
+  .wetlab-photo-grid .research-figure img { height: 180px; }
+  .wetlab-photo-grid .research-figure:first-child img { height: 380px; }
+}
+@media (max-width: 680px) {
+  .wetlab-hero { background-image: linear-gradient(90deg, #edf7fbfa, #edf7fbc9), url('assets/client-wetlab-culture-2.webp'); background-size: cover, cover; }
+  .wetlab-hero > .wrap { min-height: 370px; padding-block: 22px 27px; }
+  .wetlab-hero .breadcrumb { margin-bottom: 40px; }
+  .wetlab-hero h1 { font-size: .9rem; margin-bottom: 14px; }
+  .wetlab-hero .chapter-subtitle { font-size: clamp(2.65rem,10.5vw,4.2rem); max-width: 100%; margin-bottom: 45px; }
+  .wetlab-hero .hero-footnote { font-size: .78rem; max-width: 100%; }
+  .wetlab-nav { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 16px; margin-bottom: 0; border-bottom: 0; }
+  .wetlab-nav .small-label { flex-basis: 100%; margin-bottom: 4px; }
+  .wetlab-nav a { border: 1px solid #d4e8f2; padding: 9px 11px; font-size: .76rem; min-height: 38px; }
+  .wetlab-nav + .small-label, .wetlab-nav ~ .toc { display: none; }
+  .protocol-layout { display: block; }
+  .protocols-page .notebook-toolbar { padding: 16px; gap: 12px; }
+  .protocols-page .notebook-toolbar > a { max-width: 135px; }
+  .protocols-page .notebook-viewer { border-width: 2px; border-radius: 12px; }
+  .protocols-page .notebook-viewer iframe { height: 75vh; min-height: 570px; }
+  .wetlab-photo-grid { gap: 10px; }
+  .wetlab-photo-grid .research-figure img { height: 140px; }
+  .wetlab-photo-grid .research-figure:first-child img { height: 300px; }
+  .notebook-document-header { gap: 16px; }
+  .notebook-document-header h1 { font-size: 1.15rem; }
+  .notebook-page-label { font-size: .68rem; }
+}
+@media print {
+  .wetlab-hero { background: none; }
+  .wetlab-hero > .wrap { min-height: 0; }
+  .wetlab-nav { display: none; }
+  .wetlab-hero .chapter-subtitle { font-size: 32pt; }
+}
+

@@ -18,6 +18,10 @@
     menu.setAttribute('aria-expanded', String(open));
     nav.classList.toggle('is-open', open);
   });
+  nav?.addEventListener('click', event => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  window.matchMedia('(min-width: 861px)').addEventListener('change', closeMenu);
   $$('.nav-group').forEach(group => group.addEventListener('toggle', () => {
     if (group.open) $$('.nav-group').forEach(other => { if (other !== group) other.open = false; });
   }));
@@ -76,6 +80,7 @@
     syncCycles();
   });
   cycles.forEach(cycle => cycle.addEventListener('toggle', syncCycles));
+  syncCycles();
   function openAnchor() {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
@@ -113,20 +118,14 @@
     links.forEach(link => { const target = document.getElementById(link.hash.slice(1)); if (target) contents.observe(target); });
   }
 
-  // One animation frame handles the reading bar and gentle ocean parallax.
+  // Keep the reading bar in sync without doing work on every scroll event.
   const progress = $('.reading-progress');
-  const ocean = $('[data-parallax]');
   let scheduled = false;
   function updateScroll() {
     const available = document.documentElement.scrollHeight - window.innerHeight;
     const fraction = available > 0 ? Math.max(0, Math.min(1, window.scrollY / available)) : 0;
     if (progress) progress.style.transform = `scaleX(${fraction})`;
     $('.site-header')?.classList.toggle('is-scrolled', window.scrollY > 24);
-    if (ocean) {
-      const bounds = ocean.parentElement.getBoundingClientRect();
-      const offset = motion.matches ? 0 : Math.max(-24, Math.min(24, (window.innerHeight / 2 - bounds.top - bounds.height / 2) * 0.06));
-      ocean.style.setProperty('--parallax-offset', `${offset}px`);
-    }
     scheduled = false;
   }
   function scheduleScroll() { if (!scheduled) { scheduled = true; requestAnimationFrame(updateScroll); } }
