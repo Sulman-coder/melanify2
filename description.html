@@ -32,7 +32,7 @@
       <div class="header-inner">
         <!-- <a class="brand" href="index.html" aria-label="MELANIFY home"><span class="brand-mark" aria-hidden="true">m</span><span>MELANIFY<span class="brand-period">.</span></span></a> -->
           <a class="brand" href="index.html" aria-label="MELANIFY home">
-        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" />
+        <img src="assets/logo-removebg-preview.png" alt="MELANIFY Logo" class="brand-logo" /></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
         <nav id="main-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
@@ -50,7 +50,7 @@
           <details class="nav-group"><summary>Beyond the lab<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
             <a href="human-practices.html">Integrated Human Practices</a>
             <a href="education.html">Education</a>
-            <a href="entrepreneurship.html">Entrepreneurship</a>
+            <!-- <a href="entrepreneurship.html">Entrepreneurship</a> -->
           </div></details>
           <details class="nav-group"><summary>Team<span class="chevron" aria-hidden="true"></span></summary><div class="nav-dropdown">
             <a href="members.html">Members</a>
@@ -61,15 +61,22 @@
       <div class="reading-progress" aria-hidden="true"></div>
     </header>
 
-<div class="page-banner" aria-hidden="true">
+<section class="page-banner" id="top" aria-labelledby="page-title">
     <img src="images/banner.jpeg" alt="" width="1024" height="589" decoding="async" fetchpriority="high">
-  </div>
+    <div class="page-banner-content wrap">
+      <div class="page-banner-copy">
+        <h1 id="page-title">Project Description</h1>
+        <p class="page-banner-subtitle">A waste problem. A biological possibility.</p>
+        <p class="page-banner-description">Connecting plastic recovery with a new generation of functional biomaterials.</p>
+      </div>
+    </div>
+  </section>
 
 
 
     <main id="main">
 
-      <section class="chapter-hero photo-hero" id="top"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Project</div><div class="eyebrow">PROJECT DESCRIPTION</div><h1>A waste problem.<br><em>A biological possibility.</em></h1><p>Connecting plastic recovery with a new generation of functional biomaterials.</p></div></section>
+      <!-- <section class="chapter-hero photo-hero" id="top"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Project</div><div class="eyebrow">PROJECT DESCRIPTION</div><h1>A waste problem.<br><em>A biological possibility.</em></h1><p>Connecting plastic recovery with a new generation of functional biomaterials.</p></div></section> -->
       <div class="article-layout wrap"><aside class="article-sidebar"><div class="toc-sticky"><span class="small-label">ON THIS PAGE</span><nav class="toc" aria-label="Chapter contents"><a href="#abstract">Abstract</a><a href="#our-why">Our Why</a><a href="#current-solutions">Current Solutions</a><a href="#our-solution">Our Solution</a><a href="#future-implications">Future Implications</a><a href="#references">References</a></nav></div></aside>
       <article class="article-content" id="chapter-content">
         <h2 id="abstract">Abstract</h2>
@@ -99,7 +106,12 @@
         <h2 id="our-solution">Our Solution <span class="heading-aside">MELANIFY</span></h2>
         <p>To address the dual challenges of PET plastic pollution and harmful sunscreen runoff, we engineered MELANIFY, a circular synthetic biology platform designed to convert post-consumer plastic waste into allomelanin, a sustainable biopolymer with potential for broad-spectrum UV protection.</p>
         <p>Before engineering an enzymatic pathway, we selected our target molecule based on its structural, photoprotective, and ecological properties [16, 17, 18, 19]. Unlike human skin pigments, eumelanin and pheomelanin, which require nitrogenous precursors like L-tyrosine, allomelanin is a class of nitrogen-free melanin synthesized from aromatic catechol compounds commonly produced by fungi and plants [18].</p>
-        <section class="allomelanin-diagram" aria-label="Four properties of allomelanin">
+        <p><i>This target molecule is depicted in the illustration below, where the luminous ocean-blue core symbolizes MELANIFY's dedication to marine life by offering potent UV defense that is completely safe for coral reefs and ocean ecosystems. Radiating dark charcoal shards represent the aggregated biopolymer network that absorbs harmful solar rays.</i></p>
+
+
+         <section class="allomelanin-diagram" aria-label="Four properties of allomelanin">
+          <figure class="melanin-core"><img src="assets/allomelanin-structure.webp" alt="Conceptual allomelanin structure connecting its four material properties" width="1024" height="559" loading="lazy"></figure>
+          <div class="melanin-branches">
           <section class="melanin-branch melanin-branch-top">
             <span class="eyebrow">BRANCH 1</span>
             <h3>Broad-Spectrum Light Shielding</h3>
@@ -110,7 +122,6 @@
             <h3>Nitrogen-Free Chemical Backbone</h3>
             <ul><li><strong>Bioconversion Alignment:</strong> Derived from catecholate precursors rather than nitrogenous amino acids like L-tyrosine [18].</li><li><strong>Circular Synthesis:</strong> Enables direct, low-cost biosynthesis downstream of PET monomer degradation (TPA → PCA → Catechol) [18].</li></ul>
           </section>
-          <figure class="melanin-core"><img src="assets/allomelanin-structure.webp" alt="Conceptual allomelanin structure connecting its four material properties" width="1024" height="559" loading="lazy"></figure>
           <section class="melanin-branch melanin-branch-right">
             <span class="eyebrow">BRANCH 3</span>
             <h3>Potent Antioxidant &amp; ROS Scavenging</h3>
@@ -121,7 +132,11 @@
             <h3>Marine Biocompatibility &amp; Coral Safety</h3>
             <ul><li><strong>Zero Eco-Toxicity:</strong> Completely non-toxic to sensitive marine species, eliminating the bleaching and larval deformities caused by synthetic organic UV filters [16, 17, 18, 19].</li><li><strong>Rapid Biodegradation:</strong> Being a naturally occurring fungal/plant-type pigment, it breaks down harmlessly in coastal marine ecosystems [16, 18, 19].</li></ul>
           </section>
+          </div>
         </section>
+
+
+
         <h3>Engineering Strategy: Dual-Host Division of Labor</h3><p>Building a whole metabolic pathway from a complicated polymer, PET, to a polymerized pigment, allomelanin, within a single microbial host risks metabolic strain, cellular toxicity, and enzyme expression bottlenecks. MELANIFY uses a dual-host approach, splitting the metabolic load between two specialized chassis:</p>
         <div class="host-grid"><section><span class="eyebrow">THE SECRETORY HOST</span><h3><i>Pichia pastoris</i></h3><p>High-density extracellular enzyme secretion breaks down solid PET outside the cell without requiring cell lysis.</p></section><section><span class="eyebrow">THE BIOCONVERSION HOST</span><h3><i>Escherichia coli</i></h3><p>Membrane-displayed enzymes and intracellular metabolic operons connect PET monomers to catechol production. The present design omits the TphC transporter, so substrate access requires lysate or permeabilised cells.</p></section></div>
         <h3>The 5-Step Enzymatic Cascade</h3><figure class="research-figure"><a class="figure-open" href="assets/client-enzymatic-cascade.webp" data-image="assets/client-enzymatic-cascade.webp" data-alt="Dual-host enzymatic cascade from PET plastic to catechol-melanin" target="_blank" rel="noopener"><img src="assets/client-enzymatic-cascade.webp" alt="MELANIFY pathway showing PETase, MHETase, Tph enzymes, and AroY converting PET into catechol-melanin" loading="lazy" width="1080" height="750"><span class="figure-zoom">View full size</span></a><figcaption>The MELANIFY dual-host pathway from PET waste to allomelanin.</figcaption></figure>
@@ -247,7 +262,7 @@
     </main>
  <footer class="site-footer">
     <div class="footer-top">
-    
+
     <div><a class="brand" href="index.html" aria-label="MELANIFY home">
     <img src="images/logo2.jpeg" alt="MELANIFY Logo" style="width: 80px; height: auto; object-fit: contain;"></a>
         <p>Rethinking plastic.<br>Exploring what comes next.</p>
@@ -256,7 +271,7 @@
         <div><span>PROJECT</span><a href="description.html">Our project</a></div>
         <div><span>WET LAB</span><a href="engineering.html">Engineering</a><a href="results.html">Results</a><a
             href="protocols.html">Protocols &amp; Notebook</a><a href="parts.html">Parts</a><a
-            href="implementation.html">Implementation</a><a href="safety.html">Safety</a></div>
+            href="safety.html">Safety</a></div>
         <div><span>BEYOND THE LAB</span><a href="human-practices.html">Integrated Human Practices</a><a
             href="education.html">Education</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
         <div><span>TEAM</span><a href="members.html">Members</a><a href="attributions.html">Attributions</a></div>
